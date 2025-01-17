@@ -3,15 +3,21 @@ id: canvas_features
 title: CanvasFeatures
 ---
 
-CanvasFeatures are an alternative to HTMLFeatures and display features on the genome, including genes using HTML5 canvases. They are faster than HTML features and are somewhat easier to configure since it can be done in the config instead of via CSS styling.
+CanvasFeatures are an alternative to HTMLFeatures and display features on the
+genome, including genes using HTML5 canvases. They are faster than HTML features
+and are somewhat easier to configure since it can be done in the config instead
+of via CSS styling.
 
-The flatfile-to-json.pl by can output CanvasFeatures using the --trackType CanvasFeatures option
+The flatfile-to-json.pl by can output CanvasFeatures using the --trackType
+CanvasFeatures option
 
-For more info on loading with flatfile-to-json.pl see the[flatfile-to-json.pl](flatfile-to-json.pl.html) docs.
+For more info on loading with flatfile-to-json.pl see
+the[flatfile-to-json.pl](flatfile-to-json.pl.html) docs.
 
 ## CanvasFeatures Configuration Options
 
-Introduced in JBrowse 1.10.0, the new JBrowse CanvasFeatures tracks are faster and easier to configure than HTMLFeatures tracks.
+Introduced in JBrowse 1.10.0, the new JBrowse CanvasFeatures tracks are faster
+and easier to configure than HTMLFeatures tracks.
 
 | Option                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,8 +62,13 @@ Introduced in JBrowse 1.10.0, the new JBrowse CanvasFeatures tracks are faster a
 | `style→unprocessedTranscriptColor` | A color for the unprocessed transcript glyph. This is used when there is a mix of coding and non-coding transcripts in your GFF                                                                                                                                                                                                                                                                                             |
 | `noncodingType`                    | An array of non-coding feature types from column 3 of your GFF, default: ['ncRNA', 'lnc_RNA', 'lncRNA', 'miRNA']                                                                                                                                                                                                                                                                                                            |
 
-Note: the "compact" displayMode for CanvasFeatures tracks uses style-\>height and multiplies it by 0.35 to create the compact view. Therefore, if you adjust style-\>height to a smaller default value, then you can create "ultra compact" visualizations.
+Note: the "compact" displayMode for CanvasFeatures tracks uses style-\>height
+and multiplies it by 0.35 to create the compact view. Therefore, if you adjust
+style-\>height to a smaller default value, then you can create "ultra compact"
+visualizations.
 
 ### Customizing CanvasFeatures tracks with callbacks
 
-Unlike HTML-based feature tracks, canvas-based feature tracks don't use modify and create hooks. Instead, the `glyph` variable, and all of the `style` variables, support customization callbacks.
+Unlike HTML-based feature tracks, canvas-based feature tracks don't use modify
+and create hooks. Instead, the `glyph` variable, and all of the `style`
+variables, support customization callbacks.

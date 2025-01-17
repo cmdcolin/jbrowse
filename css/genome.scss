@@ -1,16 +1,28 @@
-
 /* base CSS environment, with dojo and some resetting */
-.jbrowse, .dijitDialog, .dijitMenu {
+.jbrowse,
+.dijitDialog,
+.dijitMenu {
     color: black;
     background: white;
     font-size: 12px;
-    font-family: Univers,Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-family:
+        Univers,
+        Trebuchet MS,
+        Helvetica,
+        Arial,
+        sans-serif;
 
-    table, tbody, th, tr, td {
+    table,
+    tbody,
+    th,
+    tr,
+    td {
         background: none;
         color: inherit;
     }
-    tr, td, table {
+    tr,
+    td,
+    table {
         margin: 0;
         border: 0;
         padding: 0;
@@ -60,4 +72,3 @@
     /* CSS styles specifically for MAKER output */
     @import "maker";
 }
-

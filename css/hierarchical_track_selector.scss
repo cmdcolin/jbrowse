@@ -14,7 +14,10 @@
 .jbrowseHierarchicalTrackSelector > .header > .textfilterContainer {
     padding: 0 5px 5px 5px;
 }
-.jbrowseHierarchicalTrackSelector > .header > .textfilterContainer > .textfilter {
+.jbrowseHierarchicalTrackSelector
+    > .header
+    > .textfilterContainer
+    > .textfilter {
     margin: 0;
 }
 
@@ -35,7 +38,7 @@
     border: 1px solid #bfbfbf;
 }
 .jbrowseHierarchicalTrackSelector label.tracklist-label:hover {
-    background: #D2E1F1;
+    background: #d2e1f1;
 }
 .jbrowseHierarchicalTrackSelector label.tracklist-label.collapsed {
     display: none;

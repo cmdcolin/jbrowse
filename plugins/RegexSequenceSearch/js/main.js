@@ -11,7 +11,7 @@ define([
     Deferred,
     dijitMenuItem,
     JBrowsePlugin,
-    SearchSeqDialog
+    SearchSeqDialog,
 ) {
     return declare(JBrowsePlugin, {
         constructor: function (args) {
@@ -27,10 +27,10 @@ define([
                             label: "Add sequence search track",
                             iconClass: "dijitIconSearch",
                             onClick: lang.hitch(this, "createSearchTrack"),
-                        })
+                        }),
                     );
                 },
-                this
+                this,
             );
         },
 
@@ -48,7 +48,7 @@ define([
                 };
                 var storeName = thisB.browser.addStoreConfig(
                     undefined,
-                    storeConf
+                    storeConf,
                 );
                 storeConf.name = storeName;
                 var searchTrackConfig = {

@@ -5,7 +5,8 @@ title: Embedding JBrowse
 
 ## Embedding in an iframe
 
-One way of embedding JBrowse just runs the full browser in an `iframe` element. It's very simple and easy to get running.
+One way of embedding JBrowse just runs the full browser in an `iframe` element.
+It's very simple and easy to get running.
 
 ```html
 <html>
@@ -31,15 +32,16 @@ Which ends up looking like this:
 
 {@inject: iframe_embed_snip}
 
-Note that the iframe's `src` attribute just points to the same JBrowse URL as your browser would.
-However, it sets a few additional options in the URL to hide some of the UI elements to give
-the view a more "embedded" feel: `tracklist=0` hides the track list on the left side,
-`nav=0` hides the navigation bar (the zoom buttons, search box, etc),
-and `overview=0` hides the overview scale bar.
+Note that the iframe's `src` attribute just points to the same JBrowse URL as
+your browser would. However, it sets a few additional options in the URL to hide
+some of the UI elements to give the view a more "embedded" feel: `tracklist=0`
+hides the track list on the left side, `nav=0` hides the navigation bar (the
+zoom buttons, search box, etc), and `overview=0` hides the overview scale bar.
 
 ## Embedding directly in a `div`
 
-JBrowse 1.14.0 and higher supports a more flexible way of embedding JBrowse by running it directly in a `div` inside another document.
+JBrowse 1.14.0 and higher supports a more flexible way of embedding JBrowse by
+running it directly in a `div` inside another document.
 
 Example code for this:
 
@@ -97,9 +99,17 @@ which looks like this when run
 
 {@inject: div_embed_snip}
 
-The biggest gotcha with this embedding method is that the relative path from the page where you embed JBrowse to the JBrowse `*.bundle.js` files must be `dist/` if you want to use a "stock" build of JBrowse. A simple way to accomplish that might be to configure a symlink in your site directory, for example by running `ln -s ./path/to/jbrowse/dist/ .`, or by creating some kind of path alias in your web server configuration.
+The biggest gotcha with this embedding method is that the relative path from the
+page where you embed JBrowse to the JBrowse `*.bundle.js` files must be `dist/`
+if you want to use a "stock" build of JBrowse. A simple way to accomplish that
+might be to configure a symlink in your site directory, for example by running
+`ln -s ./path/to/jbrowse/dist/ .`, or by creating some kind of path alias in
+your web server configuration.
 
-For JBrowse 1.15.5 or higher, the other option is to clone JBrowse from GitHub and run `setup.sh` with a nonstandard `JBROWSE_PUBLIC_PATH` environment variable set, which will configure JBrowse to serve its bundles from a different path. For example, if you had this site layout:
+For JBrowse 1.15.5 or higher, the other option is to clone JBrowse from GitHub
+and run `setup.sh` with a nonstandard `JBROWSE_PUBLIC_PATH` environment variable
+set, which will configure JBrowse to serve its bundles from a different path.
+For example, if you had this site layout:
 
 ```text
 site_root
@@ -121,7 +131,12 @@ Note the trailing slash on the value of JBROWSE_PUBLIC_PATH.
 
 ## Embedding in a `div` with dynamic configs
 
-JBrowse also allows you to define your own config dynamically and create an embedded JBrowse with that config. To do this, you first run `browser.bundle.js` which makes available `window.Browser`. You can then us that with a config object to create a JBrowse instace. This can be useful for, for example, creating a JBrowse track from data you already have in memory via the FromConfig store class.
+JBrowse also allows you to define your own config dynamically and create an
+embedded JBrowse with that config. To do this, you first run `browser.bundle.js`
+which makes available `window.Browser`. You can then us that with a config
+object to create a JBrowse instace. This can be useful for, for example,
+creating a JBrowse track from data you already have in memory via the FromConfig
+store class.
 
 This could look like this:
 
@@ -166,8 +181,7 @@ This could look like this:
             containerID: "GenomeBrowser",
             baseUrl: "../",
             refSeqs: {
-                url:
-                    "https://s3.amazonaws.com/1000genomes/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa.fai",
+                url: "https://s3.amazonaws.com/1000genomes/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa.fai",
             },
             tracks: [
                 {

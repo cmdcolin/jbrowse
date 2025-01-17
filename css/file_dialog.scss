@@ -30,7 +30,8 @@
         margin-left: -6px;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         margin: 0;
         padding: 0;
         font-size: 125%;
@@ -127,10 +128,11 @@
     .dijitSelect td.dijitStretch {
         width: 6em;
     }
-    .resourceList > h3, .trackList > h3 {
-         padding: 0 0.6em;
-         line-height: 2.1;
-         margin-bottom: 0.5em;
+    .resourceList > h3,
+    .trackList > h3 {
+        padding: 0 0.6em;
+        line-height: 2.1;
+        margin-bottom: 0.5em;
     }
 
     .emptyMessage {
@@ -146,11 +148,11 @@
         background: #8cb1dd;
     }
 
-    .resourceList > table, .trackList > table {
+    .resourceList > table,
+    .trackList > table {
         width: 95%;
         padding: 0 0.75em 0.5em 0.75em;
         margin: 0 auto;
         border-collapse: collapse;
     }
 }
-

@@ -21,13 +21,13 @@ define([], function () {
             arrayCopy_fast(
                 src.subarray(srcOffset, srcOffset + count),
                 dest,
-                destOffset
+                destOffset,
             );
         } else if (src.BYTES_PER_ELEMENT == 1 && count > 100) {
             arrayCopy_fast(
                 new Uint8Array(src.buffer, src.byteOffset + srcOffset, count),
                 dest,
-                destOffset
+                destOffset,
             );
         } else {
             arrayCopy_slow(src, srcOffset, dest, destOffset, count);

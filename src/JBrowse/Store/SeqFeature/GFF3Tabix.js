@@ -24,7 +24,7 @@ define([
     IndexedStatsEstimationMixin,
     RegionStatsMixin,
     BlobFilehandleWrapper,
-    XHRBlob
+    XHRBlob,
 ) {
     return declare(
         [
@@ -47,7 +47,7 @@ define([
                     csiBlob =
                         args.csi ||
                         new XHRBlob(
-                            this.resolveUrl(this.getConf("csiUrlTemplate", []))
+                            this.resolveUrl(this.getConf("csiUrlTemplate", [])),
                         );
                 } else {
                     tbiBlob =
@@ -55,8 +55,8 @@ define([
                         new XHRBlob(
                             this.resolveUrl(
                                 this.getConf("tbiUrlTemplate", []) ||
-                                    this.getConf("urlTemplate", []) + ".tbi"
-                            )
+                                    this.getConf("urlTemplate", []) + ".tbi",
+                            ),
                         );
                 }
 
@@ -64,7 +64,7 @@ define([
                     args.file ||
                     new XHRBlob(
                         this.resolveUrl(this.getConf("urlTemplate", [])),
-                        { expectRanges: true }
+                        { expectRanges: true },
                     );
 
                 this.indexedData = new TabixIndexedFile({
@@ -87,10 +87,10 @@ define([
                                 this.globalStats = stats;
                                 this._deferred.stats.resolve(stats);
                             },
-                            (err) => this._failAllDeferred(err)
+                            (err) => this._failAllDeferred(err),
                         );
                     },
-                    (err) => this._failAllDeferred(err)
+                    (err) => this._failAllDeferred(err),
                 );
             },
 
@@ -111,12 +111,11 @@ define([
                 featureCallback,
                 finishedCallback,
                 errorCallback,
-                allowRedispatch = true
+                allowRedispatch = true,
             ) {
                 this.indexedData.getMetadata().then((metadata) => {
-                    const regularizedReferenceName = this.browser.regularizeReferenceName(
-                        query.ref
-                    );
+                    const regularizedReferenceName =
+                        this.browser.regularizeReferenceName(query.ref);
                     const lines = [];
                     this.indexedData
                         .getLines(
@@ -128,10 +127,10 @@ define([
                                     this._parseLine(
                                         metadata.columnNumbers,
                                         line,
-                                        fileOffset
-                                    )
+                                        fileOffset,
+                                    ),
                                 );
-                            }
+                            },
                         )
                         .then(
                             () => {
@@ -151,10 +150,10 @@ define([
                                         // and is a top-level feature
                                         if (
                                             !this.dontRedispatch.includes(
-                                                featureType
+                                                featureType,
                                             ) &&
                                             this._isTopLevelFeatureType(
-                                                featureType
+                                                featureType,
                                             )
                                         ) {
                                             let start = line.start - 1; // gff is 1-based
@@ -175,12 +174,12 @@ define([
                                             {
                                                 start: minStart,
                                                 end: maxEnd,
-                                            }
+                                            },
                                         );
                                         // make a new feature callback to only return top-level features
                                         // in the original query range
                                         const newFeatureCallback = (
-                                            feature
+                                            feature,
                                         ) => {
                                             if (
                                                 feature.get("start") <
@@ -195,7 +194,7 @@ define([
                                             newFeatureCallback,
                                             finishedCallback,
                                             errorCallback,
-                                            false
+                                            false,
                                         );
                                         return;
                                     }
@@ -213,7 +212,7 @@ define([
                                         ) {
                                             if (
                                                 !lineRecord.fields[8].includes(
-                                                    "_lineHash"
+                                                    "_lineHash",
                                                 )
                                             )
                                                 lineRecord.fields[8] += `;_lineHash=${lineRecord.lineHash}`;
@@ -232,8 +231,8 @@ define([
 
                                 features.forEach((feature) =>
                                     this.applyFeatureTransforms(
-                                        this._formatFeatures(feature)
-                                    ).forEach(featureCallback)
+                                        this._formatFeatures(feature),
+                                    ).forEach(featureCallback),
                                 );
                                 finishedCallback();
                             },
@@ -242,16 +241,16 @@ define([
                                     if (
                                         error.message &&
                                         error.message.indexOf(
-                                            "Too much data"
+                                            "Too much data",
                                         ) >= 0
                                     ) {
                                         error = new Errors.DataOverflow(
-                                            error.message
+                                            error.message,
                                         );
                                     }
                                     errorCallback(error);
                                 } else console.error(error);
-                            }
+                            },
                         )
                         .catch(errorCallback);
                 }, errorCallback);
@@ -291,9 +290,9 @@ define([
                     f.subfeatures = Util.flattenOneLevel(
                         data.child_features.map((childLocs) =>
                             childLocs.map((childLoc) =>
-                                this._featureData(childLoc)
-                            )
-                        )
+                                this._featureData(childLoc),
+                            ),
+                        ),
                     );
                 }
 
@@ -317,7 +316,7 @@ define([
                             id: idIndex === 0 ? id : `${id}-${idIndex + 1}`,
                         });
                         f._reg_seq_id = this.browser.regularizeReferenceName(
-                            featureLoc.seq_id
+                            featureLoc.seq_id,
                         );
                         features.push(f);
                     });
@@ -337,7 +336,7 @@ define([
                 return this.indexedData.hasRefSeq(
                     seqName,
                     callback,
-                    errorCallback
+                    errorCallback,
                 );
             },
 
@@ -348,6 +347,6 @@ define([
                     csiUrlTemplate: (this.config.csi || {}).url,
                 };
             },
-        }
+        },
     );
 });

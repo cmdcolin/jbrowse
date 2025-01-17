@@ -3,11 +3,11 @@
 }
 
 .search-dialog .checkboxdiv {
-    display:block;
+    display: block;
 }
 
 .search-dialog .translateContainer {
-    display:inline;
+    display: inline;
 }
 .search-dialog .translateContainer > label {
     margin-left: 0.4em;

@@ -526,7 +526,9 @@ div.generic_parent-hist {
     &,
     * {
         background: #fffef0;
-        font-family: Courier New, monospace;
+        font-family:
+            Courier New,
+            monospace;
         font-weight: bold;
         cursor: default;
     }
@@ -561,7 +563,9 @@ div.generic_parent-hist {
 
 .base {
     color: black;
-    font-family: Courier New, monospace;
+    font-family:
+        Courier New,
+        monospace;
     font-weight: bold;
     text-shadow: white 0px 0px 1px;
 }
@@ -598,7 +602,9 @@ div.generic_parent-hist {
     background: #fffef0;
     border: 1px solid #aaa;
     padding: 2px;
-    font-family: Courier New, monospace;
+    font-family:
+        Courier New,
+        monospace;
     font-weight: bold;
     cursor: default;
 

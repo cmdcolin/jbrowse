@@ -1,17 +1,11 @@
-
-
-
-
 .jbrowseStandaloneDatasetSelector {
     margin-left: 2em;
     font-size: 120%;
 }
 
-
-
 .track .global_highlight {
     position: absolute;
-    background: rgba( 255, 255, 0, 0.7 );
+    background: rgba(255, 255, 0, 0.7);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -29,7 +23,7 @@
 
 .track .global_highlight_mod {
     position: absolute;
-    background: rgba( 255, 255, 0, 0.7 );
+    background: rgba(255, 255, 0, 0.7);
     box-sizing: border-box;
 
     border: 1px solid black;
@@ -60,10 +54,14 @@ fieldset > legend {
 }
 
 .locString {
-    font-family: Courier New,monospace;
+    font-family:
+        Courier New,
+        monospace;
 }
 .fasta {
-    font-family: Courier New,monospace;
+    font-family:
+        Courier New,
+        monospace;
     font-size: 14px;
 }
 
@@ -78,7 +76,8 @@ fieldset > legend {
 }
 
 /* styles for the autocomplete menu */
-.dijitComboBoxMenu .locString, .dijitComboBoxMenu .multipleLocations {
+.dijitComboBoxMenu .locString,
+.dijitComboBoxMenu .multipleLocations {
     margin-left: 1em;
 }
 .dijitComboBoxMenu .multipleLocations {
@@ -102,7 +101,7 @@ div.container {
 }
 
 div.dragWindow {
-    position:absolute;
+    position: absolute;
     overflow: hidden;
     z-index: 1;
 }
@@ -111,7 +110,7 @@ div.vertical_scrollbar {
     width: 6px;
     background: #eee;
     background: rgba(235, 235, 235, 0.62);
-    border-left: 1px solid #DDD9D9;
+    border-left: 1px solid #ddd9d9;
 }
 div.vertical_scrollbar .vertical_position_marker {
     background: #555;
@@ -138,7 +137,11 @@ div.vertical_scrollbar .vertical_position_marker {
         font-family: sans-serif;
     }
 
-    .dijitButton, .dijitToggleButton, .dijitTextBox, .dijitSelect, .dojoxTriStateCheckBox {
+    .dijitButton,
+    .dijitToggleButton,
+    .dijitTextBox,
+    .dijitSelect,
+    .dojoxTriStateCheckBox {
         height: 20px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -151,14 +154,13 @@ div.vertical_scrollbar .vertical_position_marker {
     }
 
     .dijitInputField {
-        padding-left: 3%
+        padding-left: 3%;
     }
 
     .dijitArrowButton {
-        width: 15px
+        width: 15px;
     }
 }
-
 
 .moreMatches {
     font-style: italic;
@@ -188,7 +190,7 @@ div.locationTrap {
     left: 0;
     border-color: transparent;
     border-style: solid;
-    border-bottom-color: #A9C6EB;
+    border-bottom-color: #a9c6eb;
     border-top: 0px dotted transparent;
     box-sizing: content-box;
 }
@@ -232,13 +234,15 @@ div.overview {
     display: block;
     height: 23px;
 
-    background: #FAFAFA url(../node_modules/dijit/themes/tundra/images/titleBar.png) repeat-x top left;
+    background: #fafafa
+        url(../node_modules/dijit/themes/tundra/images/titleBar.png) repeat-x
+        top left;
 
     border-style: solid;
     border-width: 1px 0px 1px 0px;
     border-color: #555;
 
-    color:#aaa;
+    color: #aaa;
     text-align: center;
     cursor: crosshair;
 }
@@ -251,8 +255,8 @@ div.block {
 }
 div.block.height_overflow .height_overflow_message {
     position: absolute;
-    color: rgb(77,77,77);
-    border-bottom: 2px solid rgb(77,77,77);
+    color: rgb(77, 77, 77);
+    border-bottom: 2px solid rgb(77, 77, 77);
     text-shadow: white 0px 0px 1px;
     white-space: nowrap;
     width: 100%;
@@ -267,7 +271,7 @@ div.block.height_overflow .height_overflow_message {
 }
 div.block.timed_out {
     background: #ddd;
-    background: rgba( 0,0,0, 0.1 );
+    background: rgba(0, 0, 0, 0.1);
 }
 
 div.track {
@@ -290,9 +294,9 @@ div.pin_underlay {
     background: white;
     z-index: 6;
 
-    -moz-box-shadow: 0 0 10px 0 rgba( 30, 30, 50, 0.9 );
-    -webkit-box-shadow: 0 0 10px 0 rgba( 30, 30, 50, 0.9 );
-    box-shadow: 0 0 10px 0 rgba( 30, 30, 50, 0.9 );
+    -moz-box-shadow: 0 0 10px 0 rgba(30, 30, 50, 0.9);
+    -webkit-box-shadow: 0 0 10px 0 rgba(30, 30, 50, 0.9);
+    box-shadow: 0 0 10px 0 rgba(30, 30, 50, 0.9);
 }
 div.track.pinned {
     z-index: 20;
@@ -322,7 +326,9 @@ div.track.pinned {
 div#static_track {
     top: 0px;
     position: absolute;
-    background: #FAFAFA url(../node_modules/dijit/themes/tundra/images/titleBar.png) repeat-x top left;
+    background: #fafafa
+        url(../node_modules/dijit/themes/tundra/images/titleBar.png) repeat-x
+        top left;
     border-top: 1px solid #999;
     border-bottom: 1px solid #444;
     z-index: 20;
@@ -385,7 +391,8 @@ div.track-border {
     top: -8px;
 }
 
-div.track-label, div.tracklist-label {
+div.track-label,
+div.tracklist-label {
     z-index: 20;
 
     padding: 1px 6px;
@@ -418,7 +425,6 @@ div.tracklist-label.collapsed {
 
 /* NOTE: browsers that don't support rgba colors will fall back to all
    track labels being #bcbcbc */
-
 
 .track .loading {
     background: #fafafa;
@@ -485,7 +491,6 @@ div.track-label .track-menu-button {
 
     border-radius: 0 6px 6px 0;
     border-left: 1px inset transparent;
-
 }
 div.track-label .feature-density {
     font-size: 90%;
@@ -501,11 +506,12 @@ div.track-label:hover .track-menu-button div {
 }
 
 div.track-label:hover .track-menu-button:hover {
-    background-color: rgba( 0, 0, 100, 0.05 );
+    background-color: rgba(0, 0, 100, 0.05);
     border-left-color: #ccc;
 }
 div.track-label .track-close-button {
-    background: url("../node_modules/dijit/themes/tundra/images/tabClose.png") no-repeat 40% 50%;
+    background: url("../node_modules/dijit/themes/tundra/images/tabClose.png")
+        no-repeat 40% 50%;
 }
 div.track-label .track-close-button:hover {
     background-image: url("../node_modules/dijit/themes/tundra/images/tabCloseHover.png");
@@ -514,29 +520,31 @@ div.track-label:hover .track-menu-button:hover div {
     background-position-x: 0px;
 }
 div.track-label:hover {
-    background: #FAFAFA url(../node_modules/dijit/themes/tundra/images/titleBar.png) repeat-x top left;
+    background: #fafafa
+        url(../node_modules/dijit/themes/tundra/images/titleBar.png) repeat-x
+        top left;
 
     border-width: 1px;
     border-color: #666;
-    border-color: rgba( 0,0,0, 1);
+    border-color: rgba(0, 0, 0, 1);
 
     background-color: #ddd;
-    opacity: 1.0;
+    opacity: 1;
 }
 
 div.tracklist-label {
     padding: 3px;
     background-color: #ddd;
-    background-color: rgba( 220, 220, 220, 0.9 );
+    background-color: rgba(220, 220, 220, 0.9);
 }
 div.tracklist-label:hover {
-    background-color:  #396494;
+    background-color: #396494;
     border: 1px solid black;
 }
 
 div.tracklist-container.dojoDndItemSelected {
-    background-color:  #396494;
-    background-color: rgb(110, 132, 156)
+    background-color: #396494;
+    background-color: rgb(110, 132, 156);
 }
 div.tracklist-container.dojoDndItemSelected .tracklist-label {
     background-color: #b2c3d6;
@@ -544,7 +552,7 @@ div.tracklist-container.dojoDndItemSelected .tracklist-label {
 
 .jbrowseSimpleTrackSelector {
     background: #f2f2f2;
-    background-image: url('../img/tracklist_bg.png');
+    background-image: url("../img/tracklist_bg.png");
     background-repeat: repeat-y;
     background-position: right;
 }
@@ -611,7 +619,7 @@ a.feature-label {
     margin-top: -0.2em;
 }
 .feature-label.highlighted {
-    background: rgba( 255, 255, 0, 0.7 );
+    background: rgba(255, 255, 0, 0.7);
     font-weight: bold;
     border: 1px solid red;
     padding: 0 2px;
@@ -620,9 +628,9 @@ a.feature-label {
 .rubber-highlight {
     border: 1px solid black;
     height: 100%;
-    border-color: rgba( 0, 0, 0, 0.6 );
+    border-color: rgba(0, 0, 0, 0.6);
     background-color: #8087ff;
-    background-color: rgba( 128, 136, 255, 0.6 );
+    background-color: rgba(128, 136, 255, 0.6);
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -635,7 +643,7 @@ a.feature-label {
     font-size: 160%;
     text-align: center;
     font-weight: bold;
-    text-shadow: #6374AB 1px 1px 0;
+    text-shadow: #6374ab 1px 1px 0;
 }
 div.overview .rubber-highlight {
     font-size: 0;
@@ -651,84 +659,88 @@ div.overview .rubber-highlight * {
     height: 30px !important;
 }
 
-
-#moveLeft, #moveRight, #bigZoomOut, #zoomOut, #bigZoomIn, #zoomIn, #moveLeftSmall, #moveRightSmall, #zoomInSmall, #zoomOutSmall{
-		background: url(../img/scroll_zoom_sprites.png) top left no-repeat;
-		background-size: 50px 280px;
-		cursor: pointer;
+#moveLeft,
+#moveRight,
+#bigZoomOut,
+#zoomOut,
+#bigZoomIn,
+#zoomIn,
+#moveLeftSmall,
+#moveRightSmall,
+#zoomInSmall,
+#zoomOutSmall {
+    background: url(../img/scroll_zoom_sprites.png) top left no-repeat;
+    background-size: 50px 280px;
+    cursor: pointer;
 }
 
-
-#moveLeft{
-	background-position: 5px -35px;
-	width:55px;
+#moveLeft {
+    background-position: 5px -35px;
+    width: 55px;
 }
 
 #moveLeftSmall {
-	background-position: 0px -200px;
-	height: 20px !important;
-	width: 33px;
+    background-position: 0px -200px;
+    height: 20px !important;
+    width: 33px;
 }
 
-#moveRight{
-	background-position: 0px -135px;
-	width:55px;
+#moveRight {
+    background-position: 0px -135px;
+    width: 55px;
 }
 
 #moveRightSmall {
-	background-position: 0px -220px;
-	height: 20px !important;
-	width: 33px;
+    background-position: 0px -220px;
+    height: 20px !important;
+    width: 33px;
 }
 
-#bigZoomOut{
-	background-position: 0px -168px;
-	width:35px;
+#bigZoomOut {
+    background-position: 0px -168px;
+    width: 35px;
 }
 
-#zoomOut{
-	background-position: 0px -100px;
-	width: 30px;
+#zoomOut {
+    background-position: 0px -100px;
+    width: 30px;
 }
 
-#zoomOutSmall{
-	background-position: 0px -240px;
-	height: 20px !important;
-	width: 20px;
+#zoomOutSmall {
+    background-position: 0px -240px;
+    height: 20px !important;
+    width: 20px;
 }
 
-
-#bigZoomIn{
-	background-position: 0px -69px;
-	width:35px;
+#bigZoomIn {
+    background-position: 0px -69px;
+    width: 35px;
 }
 
-#zoomIn{
-	background-position: 0px -2.5px;
-	width: 30px;
+#zoomIn {
+    background-position: 0px -2.5px;
+    width: 30px;
 }
 
-#zoomInSmall{
-	background-position: 0px -260px;
-	height: 20px !important;
-	width: 20px;
+#zoomInSmall {
+    background-position: 0px -260px;
+    height: 20px !important;
+    width: 20px;
 }
-
-
 
 input.nav {
     font-size: 9px !important;
 }
 
-
 .fatal_error {
     font-size: 14px;
     margin: 1em;
 }
-div.error, div.message {
+div.error,
+div.message {
     margin: 1px 1em;
     padding: 2px 6px;
-    border: 1px outset rgba( 0, 0, 0, 0.3 );
+    border: 1px outset rgba(0, 0, 0, 0.3);
 }
 div.error {
     background: #ff8888;
@@ -766,12 +778,11 @@ div.block:hover > div.message {
     z-index: 30000;
 }
 
-
 .sharePane input {
     padding: 1px 0 2px 1px;
 }
 .sharePane .copyReminder {
-    background-color:  #396494;
+    background-color: #396494;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -810,14 +821,16 @@ div.block:hover > div.message {
     left: -2px;
     height: 100%;
     width: 1px;
-    background-color: #FF0000;
+    background-color: #ff0000;
     z-index: 15;
     top: 0;
 }
 
 /* styles for per-base quality table in alignment detail pages */
 .baseQuality {
-    font-family: Courier New, monospace;
+    font-family:
+        Courier New,
+        monospace;
 }
 table.baseQuality {
     margin-bottom: 1em;
@@ -843,4 +856,3 @@ table.baseQuality td {
     display: block;
     text-align: center;
 }
-

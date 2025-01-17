@@ -158,7 +158,7 @@ export function mdToMismatches(mdstring, cigarOps, cigarMismatches, seq) {
                           cigarOps
                               ? getTemplateCoordLocal(curr.start)
                               : curr.start,
-                          1
+                          1,
                       )
                     : "X";
                 curr.altbase = token;
@@ -256,7 +256,7 @@ define(["dojo/_base/declare", "dojo/_base/array"], function (declare, array) {
             if (cigarString) {
                 mismatches = this._cigarToSkipsAndDeletions(
                     feature,
-                    parseCigar(cigarString)
+                    parseCigar(cigarString),
                 );
             } else {
                 var cramReadFeatures = feature.get("cram_read_features");
@@ -266,7 +266,7 @@ define(["dojo/_base/declare", "dojo/_base/array"], function (declare, array) {
                     cramReadFeatures.length
                 ) {
                     mismatches = mismatches.filter(
-                        (m) => !(m.type == "deletion" || m.type == "mismatch")
+                        (m) => !(m.type == "deletion" || m.type == "mismatch"),
                     );
                 }
 
@@ -275,10 +275,10 @@ define(["dojo/_base/declare", "dojo/_base/array"], function (declare, array) {
                     mismatches.push(
                         ...this._cramReadFeaturesToMismatches(
                             feature,
-                            cramReadFeatures
+                            cramReadFeatures,
                         ).filter(
-                            (m) => m.type === "skip" || m.type === "deletion"
-                        )
+                            (m) => m.type === "skip" || m.type === "deletion",
+                        ),
                     );
                 }
             }
@@ -299,7 +299,7 @@ define(["dojo/_base/declare", "dojo/_base/array"], function (declare, array) {
                 cigarOps = parseCigar(cigarString);
                 mismatches.push.apply(
                     mismatches,
-                    cigarToMismatches(cigarOps, feature.get("seq"))
+                    cigarToMismatches(cigarOps, feature.get("seq")),
                 );
             }
 
@@ -314,7 +314,7 @@ define(["dojo/_base/declare", "dojo/_base/array"], function (declare, array) {
                 ((cramReadFeatures && cramReadFeatures.length) || mdString)
             ) {
                 mismatches = mismatches.filter(
-                    (m) => !(m.type == "deletion" || m.type == "mismatch")
+                    (m) => !(m.type == "deletion" || m.type == "mismatch"),
                 );
             }
 
@@ -323,8 +323,8 @@ define(["dojo/_base/declare", "dojo/_base/array"], function (declare, array) {
                 mismatches = mismatches.concat(
                     this._cramReadFeaturesToMismatches(
                         feature,
-                        cramReadFeatures
-                    )
+                        cramReadFeatures,
+                    ),
                 );
             }
 
@@ -335,8 +335,8 @@ define(["dojo/_base/declare", "dojo/_base/array"], function (declare, array) {
                         mdString,
                         cigarOps,
                         mismatches,
-                        feature.get("seq")
-                    )
+                        feature.get("seq"),
+                    ),
                 );
             }
 

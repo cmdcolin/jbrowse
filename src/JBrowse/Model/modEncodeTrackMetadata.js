@@ -1,115 +1,122 @@
-define( [
-            'dojo/_base/declare',
-            'dojo/data/util/simpleFetch',
-            'JBrowse/Util'
-        ],
-       function( declare, simpleFetch, Util ) {
+define([
+    "dojo/_base/declare",
+    "dojo/data/util/simpleFetch",
+    "JBrowse/Util",
+], function (declare, simpleFetch, Util) {
+    var dojof = Util.dojof;
 
-var dojof = Util.dojof;
+    var M = declare(
+        null,
 
+        /**
+         * @lends JBrowse.Model.modEncodeTrackMetadata.prototype
+         */
+        {
+            /**
+             * Track metadata datasource that understands the format of the
+             * modencode.js track metadata JSON currently (May 2012) used at
+             * data.modencode.org.
+             * @constructor
+             * @param args.url {String} URL to fetch the metadata JSON from
+             */
+            constructor: function (args) {
+                this.url = args.url;
+            },
 
-var M = declare( null,
+            // dojo.data.api.Read support
+            getValue: function (i, attr, defaultValue) {
+                var v = i[attr];
+                return typeof v == "undefined" ? defaultValue : v;
+            },
+            getValues: function (i, attr) {
+                var a = [i[attr]];
+                return typeof a[0] == "undefined" ? [] : a;
+            },
 
-/**
- * @lends JBrowse.Model.modEncodeTrackMetadata.prototype
- */
-{
-    /**
-     * Track metadata datasource that understands the format of the
-     * modencode.js track metadata JSON currently (May 2012) used at
-     * data.modencode.org.
-     * @constructor
-     * @param args.url {String} URL to fetch the metadata JSON from
-     */
-    constructor: function( args ) {
-        this.url = args.url;
-    },
+            getAttributes: function (item) {
+                return dojof.keys(item);
+            },
 
-    // dojo.data.api.Read support
-    getValue: function( i, attr, defaultValue ) {
-        var v = i[attr];
-        return typeof v == 'undefined' ? defaultValue : v;
-    },
-    getValues: function( i, attr ) {
-        var a = [ i[attr] ];
-        return typeof a[0] == 'undefined' ? [] : a;
-    },
+            hasAttribute: function (item, attr) {
+                return item.hasOwnProperty(attr);
+            },
 
-    getAttributes: function(item)  {
-        return dojof.keys( item );
-    },
+            containsValue: function (item, attribute, value) {
+                return item[attribute] == value;
+            },
 
-    hasAttribute: function(item,attr) {
-        return item.hasOwnProperty(attr);
-    },
+            isItem: function (item) {
+                return typeof item == "object" && typeof item.label == "string";
+            },
 
-    containsValue: function(item, attribute, value) {
-        return item[attribute] == value;
-    },
+            isItemLoaded: function () {
+                return true;
+            },
 
-    isItem: function(item) {
-        return typeof item == 'object' && typeof item.label == 'string';
-    },
+            loadItem: function (args) {},
 
-    isItemLoaded: function() {
-        return true;
-    },
+            // used by the dojo.data.util.simpleFetch mixin to implement fetch()
+            _fetchItems: function (keywordArgs, findCallback, errorCallback) {
+                dojo.xhrGet({
+                    url: this.url,
+                    handleAs: "json",
+                    load: dojo.hitch(this, function (data) {
+                        var items = [];
+                        dojo.forEach(
+                            data.items || [],
+                            function (i) {
+                                if (dojo.isArray(i.Tracks))
+                                    dojo.forEach(
+                                        i.Tracks,
+                                        function (trackName) {
+                                            var item = dojo.clone(i);
+                                            item.key = item.label;
+                                            item.label = trackName;
+                                            delete item.Tracks;
+                                            items.push(item);
+                                        },
+                                        this,
+                                    );
+                            },
+                            this,
+                        );
+                        findCallback(items, keywordArgs);
+                    }),
+                    error: function (e) {
+                        errorCallback(e, keywordArgs);
+                    },
+                });
+            },
 
-    loadItem: function( args ) {
-    },
+            getFeatures: function () {
+                return {
+                    "dojo.data.api.Read": true,
+                    "dojo.data.api.Identity": true,
+                };
+            },
+            close: function () {},
 
-    // used by the dojo.data.util.simpleFetch mixin to implement fetch()
-    _fetchItems: function( keywordArgs, findCallback, errorCallback ) {
-        dojo.xhrGet({
-            url: this.url,
-            handleAs: 'json',
-            load: dojo.hitch(this, function( data ) {
-                var items = [];
-                dojo.forEach( data.items || [], function(i) {
-                    if( dojo.isArray( i.Tracks ) )
-                        dojo.forEach( i.Tracks, function(trackName) {
-                            var item = dojo.clone(i);
-                            item.key = item.label;
-                            item.label = trackName;
-                            delete item.Tracks;
-                            items.push( item );
-                        },this);
-                },this);
-                findCallback( items, keywordArgs );
-            }),
-            error: function(e) { errorCallback(e,keywordArgs); }
-        });
-    },
+            getLabel: function (i) {
+                return this.getValue(i, "key", undefined);
+            },
+            getLabelAttributes: function (i) {
+                return ["key"];
+            },
 
-    getFeatures: function() {
-        return {
-            'dojo.data.api.Read': true,
-            'dojo.data.api.Identity': true
-        };
-    },
-    close: function() {},
+            // dojo.data.api.Identity support
+            getIdentityAttributes: function () {
+                return ["label"];
+            },
+            getIdentity: function (i) {
+                return this.getValue(i, "label", undefined);
+            },
+            fetchItemByIdentity: function (id) {
+                return this.identIndex[id];
+            },
+        },
+    );
 
-    getLabel: function(i) {
-        return this.getValue(i,'key',undefined);
-    },
-    getLabelAttributes: function(i) {
-        return ['key'];
-    },
+    dojo.extend(M, simpleFetch);
 
-    // dojo.data.api.Identity support
-    getIdentityAttributes: function() {
-        return ['label'];
-    },
-    getIdentity: function(i) {
-        return this.getValue(i, 'label', undefined);
-    },
-    fetchItemByIdentity: function(id) {
-        return this.identIndex[id];
-    }
-});
-
-dojo.extend( M, simpleFetch );
-
-return M;
-
+    return M;
 });

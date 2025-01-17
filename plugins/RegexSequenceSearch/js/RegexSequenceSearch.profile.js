@@ -1,43 +1,49 @@
 function copyOnly(mid) {
-    return mid in {
-        // There are no modules right now that are copy-only. If you have some, though, just add
-        // them here like this:
-        // 'app/module': 1
-    };
+    return (
+        mid in
+        {
+            // There are no modules right now that are copy-only. If you have some, though, just add
+            // them here like this:
+            // 'app/module': 1
+        }
+    );
 }
 
 var profile = {
-    action: 'release',
-    cssOptimize: 'comments',
+    action: "release",
+    cssOptimize: "comments",
     mini: true,
 
-    basePath: '../../../src',
+    basePath: "../../../src",
     packages: [
-        {name: 'RegexSequenceSearch', location: '../plugins/RegexSequenceSearch/js' }
+        {
+            name: "RegexSequenceSearch",
+            location: "../plugins/RegexSequenceSearch/js",
+        },
     ],
 
-    layerOptimize: 'closure',
-    stripConsole: 'normal',
-    selectorEngine: 'acme',
+    layerOptimize: "closure",
+    stripConsole: "normal",
+    selectorEngine: "acme",
 
     layers: {
-        'RegexSequenceSearch/main': {
+        "RegexSequenceSearch/main": {
             include: [
-                'RegexSequenceSearch',
-                'RegexSequenceSearch/Store/SeqFeature/RegexSearch',
-                'RegexSequenceSearch/View/SearchSeqDialog'
+                "RegexSequenceSearch",
+                "RegexSequenceSearch/Store/SeqFeature/RegexSearch",
+                "RegexSequenceSearch/View/SearchSeqDialog",
             ],
-            exclude: [ 'JBrowse' ]
-        }
+            exclude: ["JBrowse"],
+        },
     },
 
     staticHasFeatures: {
-        'dojo-trace-api':0,
-        'dojo-log-api':0,
-        'dojo-publish-privates':0,
-        'dojo-sync-loader':0,
-        'dojo-xhr-factory':0,
-        'dojo-test-sniff':0
+        "dojo-trace-api": 0,
+        "dojo-log-api": 0,
+        "dojo-publish-privates": 0,
+        "dojo-sync-loader": 0,
+        "dojo-xhr-factory": 0,
+        "dojo-test-sniff": 0,
     },
 
     resourceTags: {
@@ -58,7 +64,7 @@ var profile = {
 
         // Files that should not be copied when the “mini” compiler flag is set to true.
         miniExclude: function (filename, mid) {
-            return ! ( /^RegexSequenceSearch/.test(mid) );
-        }
-    }
+            return !/^RegexSequenceSearch/.test(mid);
+        },
+    },
 };

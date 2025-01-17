@@ -1,7 +1,7 @@
-
-.combination_track.empty, .combination_track.empty.pinned {
+.combination_track.empty,
+.combination_track.empty.pinned {
     background: #aaa;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .combinationDialog .formulaPreview {
@@ -25,7 +25,7 @@
 }
 
 .formulaPreview .leaf.highlighted {
-    background-color: #BBB;
+    background-color: #bbb;
 }
 
 .formulaPreview .op {

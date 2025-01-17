@@ -1,8 +1,8 @@
 .dijitDialogCloseIcon {
     height: 25px;
-    width:  25px;
-    top:    0px;
-    right:  0px;
+    width: 25px;
+    top: 0px;
+    right: 0px;
     background: url("../img/commonIconsEnabled.png") no-repeat -73px 6px;
 
     border-left: 1px inset #fcfcfc;
@@ -59,7 +59,6 @@ div.powered_by {
     white-space: nowrap;
 }
 
-
 .notfound-dialog .message {
     margin: 1em;
     text-align: center;
@@ -114,7 +113,8 @@ a.dialog-new-window {
     font-weight: bold;
     border-top: 1px solid #444;
 }
-.feature-detail .genotype_summary td.count, .feature-detail .genotype_summary td.pct {
+.feature-detail .genotype_summary td.count,
+.feature-detail .genotype_summary td.pct {
     text-align: right;
 }
 .feature-detail .genotype_summary td.category.level_1 {
@@ -132,8 +132,8 @@ a.dialog-new-window {
 
 .feature-detail .subfeature-detail {
     background: #fafafa;
-    background: rgba( 0, 0, 0, 0.1 );
-    border: 1px outset #B9B9B9;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px outset #b9b9b9;
     padding: 0.6em;
     margin-bottom: 0.8em;
 }
@@ -157,7 +157,6 @@ a.dialog-new-window {
     border: none;
 }
 
-
 .feature-detail div.core {
     font-size: 110%;
 }
@@ -179,8 +178,9 @@ a.dialog-new-window {
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
 }
-.detail .value_container.big, .detail .value_container.dgrid {
-    border: 1px solid rgba(0,0,50,0.1);
+.detail .value_container.big,
+.detail .value_container.dgrid {
+    border: 1px solid rgba(0, 0, 50, 0.1);
     margin-left: 1em;
     margin-top: 0.3em;
 }
@@ -205,17 +205,19 @@ a.dialog-new-window {
     min-width: 90px;
     vertical-align: top;
     padding: 2px 0.5em;
-    background: rgba( 50, 85, 255,0.1 );
-    border-bottom: 1px solid #D2D4E4;
-    border-bottom-color: rgba( 0, 0, 0, 0.1 );
+    background: rgba(50, 85, 255, 0.1);
+    border-bottom: 1px solid #d2d4e4;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
     font-size: 1.1667em;
 }
 /* field names that have tooltips */
-.detail .field[title], .detail .dgrid-cell[title] {
-    background: rgba( 255,245,50,0.3 );
+.detail .field[title],
+.detail .dgrid-cell[title] {
+    background: rgba(255, 245, 50, 0.3);
 }
-.detail .field[title]:hover, .detail .dgrid-cell[title]:hover {
-    background: rgba( 255,255,50,0.7 );
+.detail .field[title]:hover,
+.detail .dgrid-cell[title]:hover {
+    background: rgba(255, 255, 50, 0.7);
 }
 /*
  force long sequences in feature and alignment detail dialogs to
@@ -234,8 +236,6 @@ a.dialog-new-window {
     margin: 0.8em 4em 0.5em 0.7em;
 }
 
-
-
 .loaded-plugins {
     text-align: left;
 }
@@ -251,6 +251,6 @@ a.dialog-new-window {
 
 .dgrid.genotypes {
     table {
-        margin: 0
+        margin: 0;
     }
 }

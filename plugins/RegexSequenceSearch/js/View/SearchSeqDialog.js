@@ -17,7 +17,7 @@ define([
     dRButton,
     dCheckBox,
     dTextBox,
-    ActionBarDialog
+    ActionBarDialog,
 ) {
     return declare(ActionBarDialog, {
         constructor: function () {
@@ -42,7 +42,7 @@ define([
                     innerHTML:
                         "This tool creates tracks showing regions of the reference sequence (or its translations) that match a given DNA or amino acid sequence.",
                 },
-                container
+                container,
             );
 
             // Render text box
@@ -51,7 +51,7 @@ define([
                 {
                     className: "section",
                 },
-                container
+                container,
             );
             dom.create(
                 "span",
@@ -59,7 +59,7 @@ define([
                     className: "header",
                     innerHTML: "Search for",
                 },
-                searchBoxDiv
+                searchBoxDiv,
             );
 
             var trackLabelDiv = dom.create(
@@ -67,7 +67,7 @@ define([
                 {
                     className: "section",
                 },
-                container
+                container,
             );
             dom.create(
                 "span",
@@ -75,14 +75,14 @@ define([
                     className: "header",
                     innerHTML: "Track label (optional)",
                 },
-                trackLabelDiv
+                trackLabelDiv,
             );
             var translateDiv = dom.create(
                 "div",
                 {
                     className: "translateContainer",
                 },
-                searchBoxDiv
+                searchBoxDiv,
             );
             function makeRadio(args, parent) {
                 var label = dom.create("label", {}, parent);
@@ -92,11 +92,11 @@ define([
             }
             makeRadio(
                 { name: "translate", value: "no", label: "DNA", checked: true },
-                translateDiv
+                translateDiv,
             );
             content.translate = makeRadio(
                 { name: "translate", value: "yes", label: "AA" },
-                translateDiv
+                translateDiv,
             );
 
             content.searchBox = new dTextBox({}).placeAt(searchBoxDiv);
@@ -109,7 +109,7 @@ define([
                 {
                     className: "section",
                 },
-                container
+                container,
             );
 
             var caseDiv = dom.create(
@@ -117,7 +117,7 @@ define([
                 {
                     className: "checkboxdiv",
                 },
-                textOptionsDiv
+                textOptionsDiv,
             );
             content.caseIgnore = new dCheckBox({
                 label: "Ignore case",
@@ -128,7 +128,7 @@ define([
             dom.create(
                 "label",
                 { for: "search_ignore_case", innerHTML: "Ignore Case" },
-                caseDiv
+                caseDiv,
             );
 
             // Render 'treat as regex' checkbox
@@ -137,7 +137,7 @@ define([
                 {
                     className: "checkboxdiv",
                 },
-                textOptionsDiv
+                textOptionsDiv,
             );
             content.regex = new dCheckBox({
                 label: "Treat as regular expression",
@@ -149,7 +149,7 @@ define([
                     for: "search_as_regex",
                     innerHTML: "Treat as regular expression",
                 },
-                regexDiv
+                regexDiv,
             );
 
             // Render 'forward strand' and 'reverse strand' checkboxes
@@ -158,7 +158,7 @@ define([
                 {
                     className: "section",
                 },
-                container
+                container,
             );
             dom.create(
                 "span",
@@ -166,7 +166,7 @@ define([
                     className: "header",
                     innerHTML: "Search strands",
                 },
-                strandsDiv
+                strandsDiv,
             );
 
             var fwdDiv = dom.create("div", {
@@ -187,13 +187,13 @@ define([
             dom.create(
                 "label",
                 { for: "search_fwdstrand", innerHTML: "Forward" },
-                fwdDiv
+                fwdDiv,
             );
             revDiv.appendChild(content.revStrand.domNode);
             dom.create(
                 "label",
                 { for: "search_revstrand", innerHTML: "Reverse" },
-                revDiv
+                revDiv,
             );
             strandsDiv.appendChild(fwdDiv);
             strandsDiv.appendChild(revDiv);

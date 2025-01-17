@@ -1,5 +1,5 @@
 body {
-   min-width: 650px;
+    min-width: 650px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -8,5 +8,9 @@ body {
     }
 }
 
-:link { color: #0000EE; }
-:visited { color: #551A8B; }
+:link {
+    color: #0000ee;
+}
+:visited {
+    color: #551a8b;
+}
