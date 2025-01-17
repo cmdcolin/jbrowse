@@ -1,4 +1,7 @@
+import dompurify from 'dompurify'
+
 const url = cjsRequire('url')
+
 
 import packagejson from './package.json'
 define([
@@ -121,6 +124,25 @@ define([
   LazyLoad,
 ) {
   var dojof = Util.dojof
+
+  function formatError(error) {
+    if (error) {
+      if (error.status) {
+        error =
+          error.status +
+          ' (' +
+          error.statusText +
+          ') when attempting to fetch ' +
+          error.url
+      }
+      console.error(error.stack || '' + error)
+      error = error + ''
+      if (!/\.$/.exec(error)) error = error + '.'
+
+      error = dojoxHtmlEntities.encode(error)
+    }
+    return dompurify.sanitize(error)
+  }
 
   require.on('error', function (error) {
     let errString =
@@ -477,7 +499,8 @@ define([
           var errors_div = dojo.byId('fatal_error_list')
           dojo.create(
             'div',
-            { className: 'error', innerHTML: error },
+            { 
+              className: 'error', innerHTML: formatError(error) },
             errors_div,
           )
         }
@@ -520,25 +543,6 @@ define([
      * cannot run at all, because of configuration errors or whatever.
      */
     fatalError: function (error) {
-      function formatError(error) {
-        if (error) {
-          if (error.status) {
-            error =
-              error.status +
-              ' (' +
-              error.statusText +
-              ') when attempting to fetch ' +
-              error.url
-          }
-          console.error(error.stack || '' + error)
-          error = error + ''
-          if (!/\.$/.exec(error)) error = error + '.'
-
-          error = dojoxHtmlEntities.encode(error)
-        }
-        return error
-      }
-
       if (!this.renderedFatalErrors) {
         // if the error is just that there are no ref seqs defined,
         // and there are datasets defined in the conf file, then just
@@ -3044,7 +3048,7 @@ define([
 
           new InfoDialog({
             title: 'Not found',
-            content: 'Not found: <span class="locString">' + loc + '</span>',
+            content: 'Not found: <span class="locString">' + dompurify.sanitize(loc) + '</span>',
             className: 'notfound-dialog',
           }).show()
           if (!thisB.view.pxPerBp) {
