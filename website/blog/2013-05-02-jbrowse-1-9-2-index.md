@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.9.2 maintenance release
 date: 2013-05-02
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.9.2 has been released, with fixes for a number of smaller issues
@@ -10,9 +10,9 @@ present in the 1.9.1 release.
 
 Files for download:
 
-- [JBrowse-1.9.2.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=47 "download JBrowse-1.9.2.zip") -
+- [JBrowse-1.9.2.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=47 'download JBrowse-1.9.2.zip') -
   5.0M file SHA1 ad3f510021eebbc8e0e5f6e4cfb6f2def1a63400
-- [JBrowse-1.9.2-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=48 "download JBrowse-1.9.2-dev.zip") -
+- [JBrowse-1.9.2-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=48 'download JBrowse-1.9.2-dev.zip') -
   28.6M file SHA1 91eec960ffb89a9496fe670b7512b3ccb1ece587 Changes in this
   release:
 

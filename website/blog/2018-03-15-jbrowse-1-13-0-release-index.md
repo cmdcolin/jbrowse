@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.13.0 release - now with webpack!
 date: 2018-03-15
-tags: ["News", "Software releases"]
+tags: ['News', 'Software releases']
 ---
 
 I'm pleased to announce that JBrowse 1.13.0 has been released!

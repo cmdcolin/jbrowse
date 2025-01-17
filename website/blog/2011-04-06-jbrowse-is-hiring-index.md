@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse is hiring!
 date: 2011-04-06
-tags: ["Development", "News"]
+tags: ['Development', 'News']
 ---
 
 The lead developer on the JBrowse team is moving on to pastures new: Mitch

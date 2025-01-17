@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.4.0 released, includes faceted track selection!
 date: 2012-06-14
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.4.0 has been released! There are two headline features in this
@@ -13,7 +13,7 @@ enabled by retiring the old reference sequence dropdown selector in favor of
 adding a new find-as-you-type feature to the location box.
 
 A
-[demonstration of the faceted track selector](/code/JBrowse-1.4.0-full/index.html?data=sample_data/json/modencode "view faceted track selector demo")
+[demonstration of the faceted track selector](/code/JBrowse-1.4.0-full/index.html?data=sample_data/json/modencode 'view faceted track selector demo')
 can be seen
 [here](/code/JBrowse-1.4.0-full/index.html?data=sample_data/json/modencode).
 This contains a snapshot of the modENCODE track metadata taken from
@@ -24,10 +24,10 @@ from the JBrowse test suite.
 
 As is becoming the norm, this release comes in two flavors: the "minimal"
 release
-([JBrowse-1.4.0-min.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=6 "download JBrowse-1.4.0-min.zip") -
+([JBrowse-1.4.0-min.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=6 'download JBrowse-1.4.0-min.zip') -
 2.6M) that includes only the software and documentation necessary to format your
 own data and run the browser, and the "full" release
-([JBrowse-1.4.0-full.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=5 "download JBrowse-1.4.0-full.zip") -
+([JBrowse-1.4.0-full.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=5 'download JBrowse-1.4.0-full.zip') -
 5.5M) that includes the developers' test suite, more sample data files, and
 developer documentation.
 

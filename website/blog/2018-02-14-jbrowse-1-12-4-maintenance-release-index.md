@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.12.4 maintenance release
 date: 2018-02-14
-tags: ["News", "Software releases"]
+tags: ['News', 'Software releases']
 ---
 
 JBrowse 1.12.4 has been released, with a great many improvements and bugfixes!

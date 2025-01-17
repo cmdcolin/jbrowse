@@ -213,7 +213,7 @@ user hovers over a feature with the mouse:
 ```
 
 For details on all the options supported by **onClick**, see
-[Click Configuration Options](#click-configuration-options "wikilink").
+[Click Configuration Options](#click-configuration-options 'wikilink').
 
 Note: the style→linkTemplate variable can also be used to specify a URL for
 left-click on features, but this is a legacy option.
@@ -221,7 +221,7 @@ left-click on features, but this is a legacy option.
 # Customizing Mouse-over behavior
 
 The onClick→label attribute from the
-[previous section](#customizing-left-click-behavior "wikilink") is used as the
+[previous section](#customizing-left-click-behavior 'wikilink') is used as the
 mouse-over description for features on the HTMLFeatures and CanvasFeatures
 tracks.
 
@@ -357,7 +357,7 @@ a multi-level right-click context menu:
 
 This configuration results in a context menu like the one pictured below. For
 details on what each of the options supported by menu items does, see
-[Click Configuration Options](#click-configuration-options "wikilink").
+[Click Configuration Options](#click-configuration-options 'wikilink').
 
 ![800px|center|thumb|The context menu rendered from this example configuration.](assets/config/800px-Jbrowse_rightclick.png)
 
@@ -446,7 +446,7 @@ The available options for a click action are:
 - "contentDialog" - causes the JavaScript string or callback set in the
   **content** option to be displayed in the dialog box.
 - "defaultDialog" - Performs the normal popup action. See
-  [JBrowse_Configuration_Guide\#Customizing_Mouse-over_behavior](#customizing-mouse-over-behavior "wikilink")
+  [JBrowse_Configuration_Guide\#Customizing_Mouse-over_behavior](#customizing-mouse-over-behavior 'wikilink')
   for an example of when this is useful.
 - "xhrDialog" - causes the given **url** to be opened in a popup dialog,
   containing the HTML fetched from the given **url** option. The difference
@@ -469,6 +469,6 @@ The available options for a click action are:
 - label: descriptive label for the link. In a right-click context menu, this
   will be the text in the menu item. In a onClick section, it will be the
   mouse-over description too. See
-  [JBrowse_Configuration_Guide\#Customizing_Mouse-over_behavior](#customizing-mouse-over-behavior "wikilink")
+  [JBrowse_Configuration_Guide\#Customizing_Mouse-over_behavior](#customizing-mouse-over-behavior 'wikilink')
   for details on the mouse-over behavior.
 - title: title used for the popup window

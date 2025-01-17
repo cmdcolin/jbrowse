@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.2 released
 date: 2011-02-17
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 New JBrowse release! This is version 1.2, which makes the server-side scripts

@@ -2,7 +2,7 @@
 layout: post
 title: Personal genomics website using JBrowse
 date: 2010-10-11
-tags: ["Sites using JBrowse"]
+tags: ['Sites using JBrowse']
 ---
 
 The folks over at

@@ -6,9 +6,9 @@ title: biodb-to-json.pl
 ### biodb-to-json.pl
 
 This script uses a
-[config file](/JBrowseDev/Current/Usage/ConfigFiles "wikilink") to produce a set
+[config file](/JBrowseDev/Current/Usage/ConfigFiles 'wikilink') to produce a set
 of feature tracks in JBrowse. It can be used to obtain information from any
-database with appropriate [schema](/Glossary#Database_Schema "wikilink"), or
+database with appropriate [schema](/Glossary#Database_Schema 'wikilink'), or
 from flat files. Because it can produce several feature tracks in a single
 execution, it is useful for large-scale feature data entry into JBrowse.
 

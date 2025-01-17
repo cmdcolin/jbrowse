@@ -10,10 +10,10 @@ improvements.
 
 Download links:
 
-- [JBrowse-1.8.0.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=39 "download JBrowse-1.8.0.zip") -
+- [JBrowse-1.8.0.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=39 'download JBrowse-1.8.0.zip') -
   3.3M - Includes everything you need to display your data on the web with
   JBrowse, optimized for fast loading speed.
-- [JBrowse-1.8.0-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=40 "download JBrowse-1.8.0-dev.zip") -
+- [JBrowse-1.8.0-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=40 'download JBrowse-1.8.0-dev.zip') -
   28M - Primarily for developers. Includes additional developer documentation,
   developer test suites, and full copies of Dojo and Dijit. The number 1 new
   feature is: JBrowse can now **open local BAM, BigWig, and GFF3 files** that
@@ -51,7 +51,7 @@ The last headline feature, which will be of interest primarily for developers,
 is the introduction of a **new plugin system for JBrowse**. It's still a work in
 progress, the details of the plugin API will probably not be finalized for a
 while, but the broad strokes of it are set out on the
-[JBrowse Plugin API page on the GMOD wiki](http://gmod.org/wiki/JBrowse_Plugin_API "JBrowse Plugin API").
+[JBrowse Plugin API page on the GMOD wiki](http://gmod.org/wiki/JBrowse_Plugin_API 'JBrowse Plugin API').
 If you are interested in living on the bleeding edge and developing a JBrowse
 plugin, contact the gmod-ajax mailing list, or contact me directly.
 

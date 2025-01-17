@@ -1,6 +1,6 @@
 <html>
   <head><title>JBrowse Quick-Start Tutorial</title></head>
-  <link rel="stylesheet" type="text/css" href="../docs.css"></link>
+  <link rel="stylesheet" type="text/css" href="../docs.css"/>
   <script type="text/javascript" src="../../src/dojo/dojo.js" data-dojo-config="async: 1"></script>
   <script>
     // insert the current jbrowse version in all span.current_version tags
@@ -54,7 +54,6 @@
         it.
       </p>
 
-      <p>
         <h3>Contents</h3>
         <ul>
           <li><a href="#Download_install">Download and Uncompress JBrowse</a></li>
@@ -66,7 +65,6 @@
           <li><a href="#Quantitative_tracks">Quantitative Tracks (Wiggle support)</a></li>
           <li><a href="#Troubleshooting">Troubleshooting</a></li>
         </ul>
-      </p>
 
       <a name="Download_install" id="Download_install">
         <h2>Download and Uncompress JBrowse</h2>
@@ -109,6 +107,7 @@ unzip JBrowse-<span class="current_version">1.8.0</span>.zip
 cd JBrowse-<span class="current_version">1.8.0</span>
 </pre></div>
 
+<p>
         Once you finish running that, you should try to read this
         tutorial (which is included in the JBrowse zip file) on your
         own web server by navigating to something like
@@ -127,8 +126,7 @@ cd JBrowse-<span class="current_version">1.8.0</span>
 
       <p>
         To get started with a working JBrowse running on
-        example <a style="font-style: italic"
-        href="http://en.wikipedia.org/wiki/Volvox">Volvox</a> data, on
+        example <a style="font-style: italic"  href="http://en.wikipedia.org/wiki/Volvox">Volvox</a> data, on
         machines running Linux or Mac OS X one can simply run:
 
         <div class="code">
@@ -237,7 +235,7 @@ urlTemplate    = ../../raw/volvox/volvox-sorted.bam
 baiUrlTemplate = ../../raw/volvox/volvox-sorted.bam.bai
 
 # settings for how the track looks
-category = NGS   #< category for this track
+category = NGS   # category for this track
 type = JBrowse/View/Track/Alignments2
 key  = BAM alignments from sample XYZ
         </pre></div>

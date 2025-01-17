@@ -32,7 +32,7 @@ them, and makes the tracks searchable using this metadata. By default, tracks
 only have a few default metadata facets that come from the track configuration
 itself. After initially turning on the faceted track selector, most users will
 want to add their own metadata for the tracks: see
-[Defining Track Metadata](#defining-track-metadata "wikilink") below. To enable
+[Defining Track Metadata](#defining-track-metadata 'wikilink') below. To enable
 the faceted track selector in the JBrowse configuration, set
 `trackSelector→type` to `Faceted`.
 

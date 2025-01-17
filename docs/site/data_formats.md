@@ -446,7 +446,7 @@ implementations of the Feature API.
 
 Users can extend JBrowse's functionality to with their own JavaScript code using
 the JBrowse plugin system. For an overview of plugins and their structure, see
-[Writing JBrowse Plugins](#writing-jbrowse-plugins "wikilink").
+[Writing JBrowse Plugins](#writing-jbrowse-plugins 'wikilink').
 
 To use JBrowse with an existing set of web services, users will want to
 implement a JBrowse Store module in JavaScript that can fetch data from them and

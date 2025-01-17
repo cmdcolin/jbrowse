@@ -2,7 +2,7 @@
 layout: post
 title: GSoC Students Do Cool JBrowse Projects
 date: 2016-06-03
-tags: ["google summer of code", "News"]
+tags: ['google summer of code', 'News']
 ---
 
 <div>I'm pleased to introduce two Google Summer of Code students who are working actively on Jbrowse projects:</div>

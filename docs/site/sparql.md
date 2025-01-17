@@ -126,4 +126,4 @@ queryTemplate that was set from the `variables` stanza, which would look like:
 
 The variable interpolation can also be used to refer to functions that are
 defined in external files (see
-[Including external files and functions](#including-external-files-and-functions-in-tracklistjson "wikilink")).
+[Including external files and functions](#including-external-files-and-functions-in-tracklistjson 'wikilink')).

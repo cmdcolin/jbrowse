@@ -2,16 +2,16 @@
 layout: post
 title: JBrowse 1.12.5 maintenance release
 date: 2018-02-28
-tags: ["News", "Software releases"]
+tags: ['News', 'Software releases']
 ---
 
 JBrowse 1.12.5 has been released!
 
 ## Files for download
 
-- [JBrowse-1.12.5.zip](https://github.com/GMOD/jbrowse/releases/download/1.12.5-release/JBrowse-1.12.5.zip "download JBrowse-1.12.4.zip") -
+- [JBrowse-1.12.5.zip](https://github.com/GMOD/jbrowse/releases/download/1.12.5-release/JBrowse-1.12.5.zip 'download JBrowse-1.12.4.zip') -
   5.7M file SHA19c98ff3939459253011fc3f1922a4de7fd48feda
-- [JBrowse-1.12.5-dev.zip](https://github.com/GMOD/jbrowse/releases/download/1.12.5-release/JBrowse-1.12.5-dev.zip "download JBrowse-1.12.4-dev.zip") -
+- [JBrowse-1.12.5-dev.zip](https://github.com/GMOD/jbrowse/releases/download/1.12.5-release/JBrowse-1.12.5-dev.zip 'download JBrowse-1.12.4-dev.zip') -
   30M file SHA1 97ab15f5ad5f3d29b2789e8cff077bf3a9684b86
 
 ## Minor improvements

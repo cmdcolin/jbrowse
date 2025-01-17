@@ -2,7 +2,7 @@
 layout: post
 title: About JBrowse version numbers
 date: 2013-07-02
-tags: ["Development"]
+tags: ['Development']
 ---
 
 Just so everybody's on the same page, I thought I should point out that from

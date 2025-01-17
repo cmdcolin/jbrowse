@@ -2,7 +2,7 @@
 layout: post
 title: State of the Browser, 2016
 date: 2016-02-25
-tags: ["Development", "News", "Roadmap"]
+tags: ['Development', 'News', 'Roadmap']
 ---
 
 It's been a while since we posted on here[\*](#asterisk), and while the
@@ -199,5 +199,5 @@ doesn't mean we've forgotten about them. We do still plan to get to those issues
 and to keep upgrading and refining the UI.
 
 <a name="asterisk"></a>\* OK, there was the
-[1.12 release](http://jbrowse.org/jbrowse-1-12-0/ "JBrowse-1.12.0: Open new genome from FASTA, in-line refseqs, NeatFeatures, Desktop"),
+[1.12 release](http://jbrowse.org/jbrowse-1-12-0/ 'JBrowse-1.12.0: Open new genome from FASTA, in-line refseqs, NeatFeatures, Desktop'),
 but you know. A while since we just pontificated for the hell of it.

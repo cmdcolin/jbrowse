@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse conference call
 date: 2011-09-15
-tags: ["News"]
+tags: ['News']
 ---
 
 The first JBrowse developers' conference call will be held on Monday Sept 19 at

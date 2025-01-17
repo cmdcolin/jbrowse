@@ -2,7 +2,7 @@
 layout: post
 title: "DNA sequencing on your iPhone? There's an app for that"
 date: 2011-09-16
-tags: ["News"]
+tags: ['News']
 ---
 
 Courtesy of Dave Clements: JBrowse appears (and gets a laugh, for some reason)

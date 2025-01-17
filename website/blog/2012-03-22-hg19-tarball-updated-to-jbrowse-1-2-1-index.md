@@ -2,7 +2,7 @@
 layout: post
 title: hg19 tarball updated to JBrowse 1.2.1
 date: 2012-03-22
-tags: ["Data releases", "News"]
+tags: ['Data releases', 'News']
 ---
 
 A new tar.gz file is available, containing a copy of JBrowse 1.2.1 with Human

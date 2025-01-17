@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.9.1 maintenance release
 date: 2013-04-25
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.9.1 has been released, with performance improvements in both BAM and
@@ -10,9 +10,9 @@ VCF tracks, and lots of smaller fixes and improvements.
 
 Files for download:
 
-- [JBrowse-1.9.1.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=45 "download JBrowse-1.9.1.zip") -
+- [JBrowse-1.9.1.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=45 'download JBrowse-1.9.1.zip') -
   5.0M file SHA1 1dc089e42e626da5312a8091dbcd1972a1cfb0fd
-- [JBrowse-1.9.1-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=46 "download JBrowse-1.9.1-dev.zip") -
+- [JBrowse-1.9.1-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=46 'download JBrowse-1.9.1-dev.zip') -
   28.6M file SHA1 bc5bb43ad8b71a9190e8c2a400d7db2364882e09 Changes in this
   release:
 

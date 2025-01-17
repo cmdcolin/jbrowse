@@ -2,7 +2,7 @@
 layout: post
 title: Touch the genome
 date: 2010-12-18
-tags: ["Development", "News"]
+tags: ['Development', 'News']
 ---
 
 Thanks to some great work by Juan Aguilar, JBrowse now runs on the iPad. Working

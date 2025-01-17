@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.8.1 bugfix release
 date: 2013-02-12
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.8.1 has been released, with several small fixes and additional
@@ -10,9 +10,9 @@ features, mostly related to displaying features on peptide sequences.
 
 Files for download:
 
-- [JBrowse-1.8.1.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=41 "download JBrowse-1.8.1.zip") -
+- [JBrowse-1.8.1.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=41 'download JBrowse-1.8.1.zip') -
   3.3M
-- [JBrowse-1.8.1-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=42 "download JBrowse-1.8.1-dev.zip") -
+- [JBrowse-1.8.1-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=42 'download JBrowse-1.8.1-dev.zip') -
   28.6M Changes in this release:
 
 - Added support for `cigarAttribute` and `mdAttributes` configuration variables

@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse in Google Summer of Code 2012
 date: 2012-03-16
-tags: ["Development"]
+tags: ['Development']
 ---
 
 Great news! JBrowse has been accepted to Google Summer of Code 2012 under the

@@ -10,11 +10,11 @@ smaller improvements and bug fixes.
 
 Download links:
 
-- [JBrowse-1.9.0.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=43 "download JBrowse-1.9.0.zip") -
+- [JBrowse-1.9.0.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=43 'download JBrowse-1.9.0.zip') -
 5.0M - Includes everything you need to display your data on the web with
 JBrowse, optimized for fast loading speed.
   <div>SHA1 file checksum: 98bc85d50827db05ad89863c723f0fab54af3dfe</div>
-- [JBrowse-1.9.0-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=44 "download JBrowse-1.9.0-dev.zip") -
+- [JBrowse-1.9.0-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=44 'download JBrowse-1.9.0-dev.zip') -
 28M - Primarily for developers. Includes additional developer documentation,
 developer test suites, and full copies of Dojo and Dijit.
   <div>SHA1 file checksum: 83bd7c1d630dee7019662f60f0a0b13164e6aa93</div>

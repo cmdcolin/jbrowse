@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.2.2 released
 date: 2012-03-25
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 This is a minor bugfix release, containing fixes for display of unstranded

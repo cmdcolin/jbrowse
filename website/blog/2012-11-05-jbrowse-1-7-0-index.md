@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.7.0, now with data export, direct BAM display, and much more
 date: 2012-11-05
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 I am pleased to announce the release of JBrowse 1.7.0, which includes a great
@@ -10,10 +10,10 @@ many enhancements both large and small. Very exciting!
 
 First, the download links:
 
-- [JBrowse-1.7.0.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=25 "download JBrowse-1.7.0.zip") -
+- [JBrowse-1.7.0.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=25 'download JBrowse-1.7.0.zip') -
   2.9M - Includes everything you need to display your data on the web with
   JBrowse, optimized for loading speed.
-- [JBrowse-1.7.0-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=26 "download JBrowse-1.7.0-dev.zip") -
+- [JBrowse-1.7.0-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=26 'download JBrowse-1.7.0-dev.zip') -
   27.4M - Primarily for developers. Includes additional developer documentation,
   developer tests suites, and full copies of Dojo and Dijit. Now for the big new
   features.
@@ -103,17 +103,17 @@ options, and speed enhancements.
 
         *   Feature tracks no longer use the `style.subfeatureScale`
 
-    configuration variable to determine whether to show subfeatures. Instead,
-    subfeatures are shown if the parent feature, when shown on the screen, is
-    wider than `style.minSubfeatureWidth`, which defaults to 6 pixels. \* Make
-    explicitly-configured track `labelScale`, `histScale`, and
-    `descriptionScale` not be modulated by the feature density: only use the
-    feature density to pick the scale defaults
+  configuration variable to determine whether to show subfeatures. Instead,
+  subfeatures are shown if the parent feature, when shown on the screen, is
+  wider than `style.minSubfeatureWidth`, which defaults to 6 pixels. \* Make
+  explicitly-configured track `labelScale`, `histScale`, and `descriptionScale`
+  not be modulated by the feature density: only use the feature density to pick
+  the scale defaults
 
 - The default feature-detail dialog box now shows more information, adding:
 
-    - the feature's exact length
-    - full details of its subfeatures
+  - the feature's exact length
+  - full details of its subfeatures
 
 - Added a `locationBoxLength` configuration variable that controls the width of
   the location box. In addition, the default width of the location box is now

@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.14.0 release - iframe-less embedding, BigBed support
 date: 2018-04-18
-tags: ["Development", "News", "Software releases"]
+tags: ['Development', 'News', 'Software releases']
 ---
 
 JBrowse 1.14.0 has been released!
@@ -106,8 +106,8 @@ track configuration:
     >
     </div>
     </pre>
-    would tell JBrowse to look for its configuration and assets at the relative
-    base URL "../jbrowse". [@rbuels](https://github.com/rbuels)
+  would tell JBrowse to look for its configuration and assets at the relative
+  base URL "../jbrowse". [@rbuels](https://github.com/rbuels)
 - JBrowse now has a favicon!
   ([issue #973](https://github.com/gmod/jbrowse/issues/973),
   [@rbuels](https://github.com/rbuels))

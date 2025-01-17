@@ -2,7 +2,7 @@
 layout: post
 title: Summer 2011 update
 date: 2011-08-03
-tags: ["News"]
+tags: ['News']
 ---
 
 Over the summer the JBrowse project has been very capably assisted by two

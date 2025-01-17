@@ -1045,8 +1045,8 @@ You will want to
 - Put the BAM and BAI (or CSI) index in the JBrowse data directory
 - Add a section to your tracks.conf
 
-    [tracks.mytrack] storeClass=JBrowse/Store/SeqFeature/BAM
-    urlTemplate=myfile.bam type=Alignments2 key=My BAM experiment
+  [tracks.mytrack] storeClass=JBrowse/Store/SeqFeature/BAM
+  urlTemplate=myfile.bam type=Alignments2 key=My BAM experiment
 
 If this does not work feel free to ask gmod-ajax@lists.sourceforge.net
 
@@ -1063,8 +1063,8 @@ When you set up a BigWig file in jbrowse, the best way to do it is as follows
 - Put the BigWig file in your data directory
 - Add a section to your tracks.conf
 
-    [tracks.mybigwig] urlTemplate=file.bw type=JBrowse/View/Track/Wiggle/XYPlot
-    storeClass=JBrowse/Store/SeqFeature/BigWig key=My BigWig experiment
+  [tracks.mybigwig] urlTemplate=file.bw type=JBrowse/View/Track/Wiggle/XYPlot
+  storeClass=JBrowse/Store/SeqFeature/BigWig key=My BigWig experiment
 
 ### How do I set up a VCF file?
 
@@ -1087,8 +1087,8 @@ Now that your VCF is indexed, follow these steps
 - Edit data/trackList.json
 - Put the following in there:
 
-    [tracks.myvcf] urlTemplate=myfile.vcf.gz
-    storeClass=JBrowse/Store/SeqFeature/VCFTabix type=CanvasVariants
+  [tracks.myvcf] urlTemplate=myfile.vcf.gz
+  storeClass=JBrowse/Store/SeqFeature/VCFTabix type=CanvasVariants
 
 ### How do I get IndexedFasta track to work in JBrowse
 

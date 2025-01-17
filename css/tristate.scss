@@ -17,114 +17,114 @@
  */
 .dojoxTriStateCheckBox,
 .dojoxTriStateCheckBoxIcon {
-    background-image: url("../img/tristate.png");
-    /* checkbox sprite image */
+  background-image: url('../img/tristate.png');
+  /* checkbox sprite image */
 
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 22px !important;
-    margin: 0 2px 0 0;
-    padding: 5px 5px 5px 5px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 22px !important;
+  margin: 0 2px 0 0;
+  padding: 5px 5px 5px 5px;
 }
 .dj_ie6 .dojoxTriStateCheckBox,
 .dj_ie6 .dojoxTriStateCheckBoxIcon {
-    background-image: url("../img/tristate.png");
-    /* checkbox sprite image */
+  background-image: url('../img/tristate.png');
+  /* checkbox sprite image */
 }
 .dojoxTriStateCheckBox {
-    /* unchecked */
+  /* unchecked */
 
-    background-position: -30px;
+  background-position: -30px;
 }
 .dojoxTriStateCheckBoxChecked {
-    /* checked */
-    background-position: 0px;
+  /* checked */
+  background-position: 0px;
 }
 .dojoxTriStateCheckBoxMixed {
-    /* mixed */
+  /* mixed */
 
-    background-position: -90px;
+  background-position: -90px;
 }
 .dojoxTriStateCheckBoxDisabled {
-    /* disabled and unchecked */
+  /* disabled and unchecked */
 
-    background-position: -30px;
+  background-position: -30px;
 }
 .dojoxTriStateCheckBoxCheckedDisabled {
-    /* disabled and checked */
+  /* disabled and checked */
 
-    background-position: 0px;
+  background-position: 0px;
 }
 .dojoxTriStateCheckBoxMixedDisabled {
-    /* disabled and mixed */
+  /* disabled and mixed */
 
-    background-position: -90px;
+  background-position: -90px;
 }
 .dojoxTriStateCheckBoxHover {
-    /* hovering over and unchecked */
+  /* hovering over and unchecked */
 
-    background-position: -60px;
+  background-position: -60px;
 }
 .dojoxTriStateCheckBoxCheckedHover {
-    /* hovering over and checked */
+  /* hovering over and checked */
 
-    background-position: 0px;
+  background-position: 0px;
 }
 .dojoxTriStateCheckBoxMixedHover {
-    /* hovering over and mixed */
+  /* hovering over and mixed */
 
-    background-position: -120px;
+  background-position: -120px;
 }
 
 .dijit_a11y .dojoxTriStateCheckBoxHover .dojoxTriStateCheckBoxInner,
 .dijit_a11y .dojoxTriStateCheckBoxFocused .dojoxTriStateCheckBoxInner {
-    /* focused or hovering over */
-    border: dashed;
+  /* focused or hovering over */
+  border: dashed;
 }
 
 .dijit_a11y .dojoxTriStateCheckBoxHover .dojoxTriStateCheckBoxInner,
 .dijit_a11y .dojoxTriStateCheckBoxFocused .dojoxTriStateCheckBoxInner {
-    /* focused or hovering over */
-    border: solid;
+  /* focused or hovering over */
+  border: solid;
 }
 
 .dijit_a11y .dojoxTriStateCheckBoxDisabled .dojoxTriStateCheckBoxInner {
-    /* focused or hovering over */
-    opacity: 0.5;
+  /* focused or hovering over */
+  opacity: 0.5;
 }
 
 .dj_ie .dijit_a11y .dojoxTriStateCheckBoxDisabled .dojoxTriStateCheckBoxInner {
-    /* disabled */
+  /* disabled */
 }
 
 .dojoxTriStateCheckBoxInner {
-    /* inner text */
+  /* inner text */
 
-    visibility: hidden;
-    display: none;
-    position: absolute;
-    text-align: center;
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  text-align: center;
 }
 
 .dijit_a11y .dojoxTriStateCheckBoxInner {
-    /* inner text */
+  /* inner text */
 
-    visibility: visible;
-    display: block;
+  visibility: visible;
+  display: block;
 }
 
 .dojoxTriStateCheckBoxInput {
-    /* place the actual input on top, but all-but-invisible */
-    opacity: 0.01;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    width: 30px;
-    height: 22px;
-    background-position: center center;
-    background-repeat: no-repeat;
+  /* place the actual input on top, but all-but-invisible */
+  opacity: 0.01;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 30px;
+  height: 22px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .dj_ie .dojoxTriStateCheckBoxInput {
-    filter: alpha(opacity=0);
+  filter: alpha(opacity=0);
 }

@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.3.1 released
 date: 2012-04-19
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.3.1 has been released, this is a minor release with fixes for some

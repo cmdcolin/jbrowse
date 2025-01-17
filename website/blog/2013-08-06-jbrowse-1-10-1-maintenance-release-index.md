@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.10.1 maintenance release
 date: 2013-08-06
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.10.1 has been released, with fixes for some minor issues and one major
@@ -10,9 +10,9 @@ issue.
 
 Files for download:
 
-- [JBrowse-1.10.1.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=63 "download JBrowse-1.10.1.zip") -
+- [JBrowse-1.10.1.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=63 'download JBrowse-1.10.1.zip') -
   5.2M file SHA1 3677d10ba4ffd6ba604871dc11b1989131baff9f
-- [JBrowse-1.10.1-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=64 "download JBrowse-1.10.1-dev.zip") -
+- [JBrowse-1.10.1-dev.zip](http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=64 'download JBrowse-1.10.1-dev.zip') -
   26M file SHA1 f6a1a89d42498887ee0123ce2b98afea4478b6e0
 
 Changes in this release:

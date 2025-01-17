@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.2.1 released
 date: 2011-03-17
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.2.1 is a maintenance release that fixes some bugs that were reported

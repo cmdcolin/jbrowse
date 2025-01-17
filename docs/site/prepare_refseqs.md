@@ -23,7 +23,7 @@ This script is used to format sequence data for use by JBrowse, and must be run
 before adding other tracks. In addition to formatting the sequence data, this
 script creates a track called "DNA" that displays the reference sequence. The
 simplest way to use it is with the --fasta option, which uses a single sequence
-or set of reference sequences from a [FASTA](/Glossary#FASTA "wikilink") file:
+or set of reference sequences from a [FASTA](/Glossary#FASTA 'wikilink') file:
 
 `bin/prepare-refseqs.pl --fasta <fasta file> [options]`
 

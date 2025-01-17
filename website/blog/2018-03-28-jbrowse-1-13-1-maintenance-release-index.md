@@ -2,16 +2,16 @@
 layout: post
 title: JBrowse 1.13.1 maintenance release
 date: 2018-03-28
-tags: ["Development", "News", "Software releases"]
+tags: ['Development', 'News', 'Software releases']
 ---
 
 JBrowse 1.13.1 has been released!
 
 ## Files for download
 
-- [JBrowse-1.13.1.zip](https://github.com/GMOD/jbrowse/releases/download/1.13.1-release/JBrowse-1.13.1.zip "download JBrowse-1.13.1.zip") -
+- [JBrowse-1.13.1.zip](https://github.com/GMOD/jbrowse/releases/download/1.13.1-release/JBrowse-1.13.1.zip 'download JBrowse-1.13.1.zip') -
   2.7M file SHA1 a22df76b7e970af9c7c6bda36ebdc4181344dbfd
-- [JBrowse-1.13.1-dev.zip](https://github.com/GMOD/jbrowse/releases/download/1.13.1-release/JBrowse-1.13.1-dev.zip "download JBrowse-1.13.1-dev.zip") -
+- [JBrowse-1.13.1-dev.zip](https://github.com/GMOD/jbrowse/releases/download/1.13.1-release/JBrowse-1.13.1-dev.zip 'download JBrowse-1.13.1-dev.zip') -
   6.4M file SHA1 686d04a3e0a07c70b62b8cd3ebe0741853971b03
 
 ## Minor improvements

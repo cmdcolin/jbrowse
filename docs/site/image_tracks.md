@@ -7,9 +7,9 @@ title: Pre-rendered Image Tracks
 
 JBrowse supports tracks based on pre-generated PNG or JPEG images that are tiled
 along the reference sequence. Currently, JBrowse ships with two different image
-track generators: [wig-to-json.pl](#wig-to-jsonpl "wikilink"), which generates
+track generators: [wig-to-json.pl](#wig-to-jsonpl 'wikilink'), which generates
 images showing simple quantitative (wiggle) data, and
-[draw-basepair-track.pl](#draw-basepair-trackpl "wikilink"), which draws arcs to
+[draw-basepair-track.pl](#draw-basepair-trackpl 'wikilink'), which draws arcs to
 show the base pairing structure of RNAs.
 
 ## wig-to-json.pl
@@ -21,7 +21,7 @@ script creates a single Image track that displays data from the wiggle file.
 **Beginning with JBrowse 1.5, this is no longer the recommended method of
 displaying wiggle data: it has largely been replaced by the direct-access BigWig
 data store coupled with the next-generation Wiggle track type. See
-[Wiggle Tracks](</#Wiggle/BigWig_Tracks_(XYPlot,_Density)> "wikilink").**
+[Wiggle Tracks](</#Wiggle/BigWig_Tracks_(XYPlot,_Density)> 'wikilink').**
 
 In wiggle data, a numeric value is associated with each nucleotide position in
 the reference sequence. This is represented in JBrowse as a track that looks

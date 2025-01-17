@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.6.0 released, includes feature descriptions and more!
 date: 2012-08-25
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 I'm very pleased to announce the release of JBrowse 1.6.0! This release is not

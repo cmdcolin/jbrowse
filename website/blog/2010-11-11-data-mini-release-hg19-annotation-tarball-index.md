@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse tarball for hg19 human genome data
 date: 2010-11-11
-tags: ["Data releases"]
+tags: ['Data releases']
 ---
 
 Something we get asked for a lot is **data releases:** tarballs of JBrowse JSON

@@ -2,16 +2,16 @@
 layout: post
 title: JBrowse 1.14.1 maintenance release
 date: 2018-05-02
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse 1.14.1 has been released!
 
 ## Files for download
 
-- [JBrowse-1.14.1.zip](https://github.com/GMOD/jbrowse/releases/download/1.14.1-release/JBrowse-1.14.1.zip "download JBrowse-1.14.1.zip") -
+- [JBrowse-1.14.1.zip](https://github.com/GMOD/jbrowse/releases/download/1.14.1-release/JBrowse-1.14.1.zip 'download JBrowse-1.14.1.zip') -
   2.8M file SHA1 f41c89826db00afc4b78a37a255aa6b43c3df986
-- [JBrowse-1.14.1-dev.zip](https://github.com/GMOD/jbrowse/releases/download/1.14.1-release/JBrowse-1.14.1-dev.zip "download JBrowse-1.14.1-dev.zip") -
+- [JBrowse-1.14.1-dev.zip](https://github.com/GMOD/jbrowse/releases/download/1.14.1-release/JBrowse-1.14.1-dev.zip 'download JBrowse-1.14.1-dev.zip') -
   7.5M file SHA1 5a2e119c08790eb81dc6ae2ac8cf7483093ac9e5
 
 ## Minor improvements

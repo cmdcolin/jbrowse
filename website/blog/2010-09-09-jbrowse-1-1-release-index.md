@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.1 release
 date: 2010-09-09
-tags: ["Release 1.1", "Software releases"]
+tags: ['Release 1.1', 'Software releases']
 ---
 
 JBrowse version 1.1 is released! You can find the code here:

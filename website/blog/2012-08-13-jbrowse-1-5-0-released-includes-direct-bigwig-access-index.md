@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.5.0 released, includes direct BigWig access!
 date: 2012-08-13
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 I'm very pleased to announce the release of JBrowse 1.5.0! There are three

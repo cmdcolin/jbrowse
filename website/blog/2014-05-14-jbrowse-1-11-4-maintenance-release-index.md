@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse-1.11.4 maintenance release
 date: 2014-05-14
-tags: ["News", "Software releases"]
+tags: ['News', 'Software releases']
 ---
 
 I am happy to announce the release of JBrowse 1.11.4. This is the first release

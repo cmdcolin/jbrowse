@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.3.0, a major release!
 date: 2012-04-13
-tags: ["Software releases"]
+tags: ['Software releases']
 ---
 
 JBrowse version 1.3.0 has arrived!
@@ -12,10 +12,10 @@ long time coming. It's full speed ahead from here: more major new features are
 just around the corner!
 
 This release comes in two flavors: the "minimal" release
-([JBrowse-1.3.0-min.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=9 "download JBrowse-1.3.0-min.zip") -
+([JBrowse-1.3.0-min.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=9 'download JBrowse-1.3.0-min.zip') -
 2.0M) that includes only the software and documentation necessary to format your
 own data and run the browser, and the "full" release
-([JBrowse-1.3.0-full.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=10 "download JBrowse-1.3.0-full.zip") -
+([JBrowse-1.3.0-full.zip](/wordpress/wp-content/plugins/download-monitor/download.php?id=10 'download JBrowse-1.3.0-full.zip') -
 4.7M) that includes the developers' test suite, more sample data files, and
 developer documentation.
 

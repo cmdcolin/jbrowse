@@ -750,13 +750,13 @@
   dataset selector. The width defaults to `15em`. Example setting in
   tracks.conf:
 
-    ```
-    [GENERAL]
-    classicMenu = true
-    datasetSelectorWidth = 20em
-    ```
+  ```
+  [GENERAL]
+  classicMenu = true
+  datasetSelectorWidth = 20em
+  ```
 
-    Thanks to @srobb1 for pointing out the need for this. (issue #1059, @rbuels)
+  Thanks to @srobb1 for pointing out the need for this. (issue #1059, @rbuels)
 
 - When exporting GFF3 from the 'Save track data' menu, the `##sequence-region`
   pragma now specifies the exact sequence region that was exported from the UI.
@@ -1000,15 +1000,15 @@
   naming conventions, you will want to publish it as something like
   "myawesome-jbrowse-plugin" and add a configuration stanza to its package.json
   file telling JBrowse its real plugin name. Example:
-    ```
-    {
-        ...
-        "jbrowse": {
-            "pluginName": "MyAwesomePlugin"
-        },
-        ...
-    }
-    ```
+  ```
+  {
+      ...
+      "jbrowse": {
+          "pluginName": "MyAwesomePlugin"
+      },
+      ...
+  }
+  ```
 
 ## Minor Improvements
 
@@ -1853,9 +1853,9 @@ Special Release for Apollo
   it. This syntax is also much easier to hand-write than JSON. The JSON
   configuration syntax is not going away, and will continue to be supported.
 
-    Thanks to Erik Derohanian for the original implementation of this
-    configuration adaptor, and Richard Hayes and Keiran Raine for motivating the
-    work to polish and more fully integrate it.
+  Thanks to Erik Derohanian for the original implementation of this
+  configuration adaptor, and Richard Hayes and Keiran Raine for motivating the
+  work to polish and more fully integrate it.
 
 - Variables in configuration files can now be based on the contents of other
   variables. For example, setting
@@ -1863,10 +1863,10 @@ Special Release for Apollo
         "myCustomVariable": "/some/custom/path",
         "include": "{myCustomVariable}/conf.json"
 
-    will try to include a configuration file located at
-    "/some/custom/path/conf.json". Interpolation is done as the final step in
-    configuration loading, so variables can come from anywhere in the
-    configuration.
+  will try to include a configuration file located at
+  "/some/custom/path/conf.json". Interpolation is done as the final step in
+  configuration loading, so variables can come from anywhere in the
+  configuration.
 
 - When JBrowse is started, if there are no reference sequences found in the
   default `dataRoot`, but the dataset selector is configured, JBrowse shows a
@@ -2269,7 +2269,7 @@ Special Release for Apollo
 
         `{ "urlbam": { "type": "JBrowse/Store/SeqFeature/BAM", "urlTemplate": "/path/to/my/bamfile.bam" }}`
 
-    which, when URI-escaped and put in the query string, looks like:
+  which, when URI-escaped and put in the query string, looks like:
 
         `addStores=%7B%20%22urlbam%22%3A%20%7B%20%22type%22%3A%20%22JBrowse%2FStore%2FSeqFeature%2FBAM%22%2C%20%22urlTemplate%22%3A%20%22%2Fpath%2Fto%2Fmy%2Fbamfile.bam%22%20%7D%7D`
 
@@ -2392,16 +2392,16 @@ Special Release for Apollo
   `glyph` key to set which glyph to use. Glyphs that are currently implemented
   are:
 
-    - Box - draws a box, optionally with an arrow indicating strandedness.
-    - Segments - draws a series of boxes connected with a line, for features
-      with subparts.
-    - ProcessedTranscript - draws CDS and UTR features, with UTRs a different
-      color and thinner.
-    - Gene - draws a group of aligned ProcessedTranscript glyphs for mRNAs that
-      are subfeatures of a top-level gene feature.
+  - Box - draws a box, optionally with an arrow indicating strandedness.
+  - Segments - draws a series of boxes connected with a line, for features with
+    subparts.
+  - ProcessedTranscript - draws CDS and UTR features, with UTRs a different
+    color and thinner.
+  - Gene - draws a group of aligned ProcessedTranscript glyphs for mRNAs that
+    are subfeatures of a top-level gene feature.
 
-    Each of these glyphs have been patterned as near-clones of the (very
-    popular) analogous glyphs in GBrowse.
+  Each of these glyphs have been patterned as near-clones of the (very popular)
+  analogous glyphs in GBrowse.
 
 - Added a SPARQL data backend to allow displaying features directly from a
   SPARQL endpoint. Many thanks to the NDBC/DBCLS BioHackathon 2012 and 2013
@@ -2428,19 +2428,19 @@ Special Release for Apollo
   used to start JBrowse. This variable accepts feature data in JSON format in
   the form:
 
-    `[{ "seq_id":"ctgA", "start": 123, "end": 456, "name": "MyBLASTHit"},...}]`
+  `[{ "seq_id":"ctgA", "start": 123, "end": 456, "name": "MyBLASTHit"},...}]`
 
-    which, when URI-escaped and put in the query string, looks like:
+  which, when URI-escaped and put in the query string, looks like:
 
-    `addFeatures=%5B%7B%20%22seq_id%22%3A%22ctgA%22%2C%20%22start%22%3A%20123%2C%20%22end%22%3A%20456%2C%20%22name%22%3A%20%22MyBLASTHit%22%7D%5D`
+  `addFeatures=%5B%7B%20%22seq_id%22%3A%22ctgA%22%2C%20%22start%22%3A%20123%2C%20%22end%22%3A%20456%2C%20%22name%22%3A%20%22MyBLASTHit%22%7D%5D`
 
-    Developers integrating JBrowse into larger project may find this feature
-    useful for displaying results from other non-JavaScript-based applications
-    (such as legacy web BLAST tools) in JBrowse.
+  Developers integrating JBrowse into larger project may find this feature
+  useful for displaying results from other non-JavaScript-based applications
+  (such as legacy web BLAST tools) in JBrowse.
 
-    Features added to JBrowse in this way are available in a special data store
-    named `url`, which can be specified in a track configuration by adding
-    `"store":"url"`.
+  Features added to JBrowse in this way are available in a special data store
+  named `url`, which can be specified in a track configuration by adding
+  `"store":"url"`.
 
 - Added support for an `addTracks` variable in the query string of the URL used
   to start JBrowse. This variable accepts track configurations in JSON format in
@@ -2448,7 +2448,7 @@ Special Release for Apollo
 
         `[{"label":"mytrack","store":"url","type":"JBrowse/View/Track/HTMLFeatures"},...]`
 
-    which, when URI-escaped and put in the query string, looks like:
+  which, when URI-escaped and put in the query string, looks like:
 
         `addTracks=%5B%7B%22label%22%3A%22mytrack%22%2C%22store%22%3A%22url%22%2C%22type%22%3A%22JBrowse%2FView%2FTrack%2FHTMLFeatures%22%7D%5D`
 
@@ -3195,18 +3195,18 @@ Special Release for Apollo
 
 - Improvements to feature track configuration:
 
-    - Feature tracks no longer use the `style.subfeatureScale` configuration
-      variable to determine whether to show subfeatures. Instead, subfeatures
-      are shown if the parent feature, when shown on the screen, is wider than
-      `style.minSubfeatureWidth`, which defaults to 6 pixels.
-    - Make explicitly-configured track `labelScale`, `histScale`, and
-      `descriptionScale` not be modulated by the feature density: only use the
-      feature density to pick the scale defaults
+  - Feature tracks no longer use the `style.subfeatureScale` configuration
+    variable to determine whether to show subfeatures. Instead, subfeatures are
+    shown if the parent feature, when shown on the screen, is wider than
+    `style.minSubfeatureWidth`, which defaults to 6 pixels.
+  - Make explicitly-configured track `labelScale`, `histScale`, and
+    `descriptionScale` not be modulated by the feature density: only use the
+    feature density to pick the scale defaults
 
 - The default feature-detail dialog box now shows more information, adding:
 
-    - the feature's exact length
-    - full details of its subfeatures
+  - the feature's exact length
+  - full details of its subfeatures
 
 - Added a `locationBoxLength` configuration variable that controls the width of
   the location box. In addition, the default width of the location box is now
@@ -3283,12 +3283,12 @@ Special Release for Apollo
 - Improvements to the scalability of `generate-names.pl`. Many thanks to Steffi
   Geisen for her ongoing help with this.
 
-    - Users can now manually specify which tracks will be indexed to enable
-      autocompletion and searching for their feature names in the JBrowse
-      location box.
-    - The lazy-trie name indexing structure now correctly handles the case of
-      large numbers of features that may share the same name. Before, it was
-      generating files that were too large for the client to handle.
+  - Users can now manually specify which tracks will be indexed to enable
+    autocompletion and searching for their feature names in the JBrowse location
+    box.
+  - The lazy-trie name indexing structure now correctly handles the case of
+    large numbers of features that may share the same name. Before, it was
+    generating files that were too large for the client to handle.
 
 - Fixed off-by-one error in Wiggle track display code: wiggle data was
   incorrectly displayed shifted one base to the left of its proper position.
@@ -3523,8 +3523,8 @@ Special Release for Apollo
   mod_setenvif must be installed and enabled. Under nginx a configuration
   snippet like the following should be included in the configuration:
 
-    location ~\* "\.(json|txt)z\$" { add_header Content-Encoding gzip; gzip off;
-    types { application/json jsonz; } }
+  location ~\* "\.(json|txt)z\$" { add_header Content-Encoding gzip; gzip off;
+  types { application/json jsonz; } }
 
 - flatfile-to-json.pl: now much faster and more memory-efficient, especially for
   GFF3 files. Remember that '###' directives are very important to have in large
@@ -3544,22 +3544,22 @@ Special Release for Apollo
 
 - Browser support for this release:
 
-    - Google Chrome 18 perfect
-    - Google Chrome 17 perfect
-    - Mozilla Firefox 11.0 perfect
-    - Mozilla Firefox 10.1 perfect
-    - Mozilla Firefox 10.0.2 perfect
-    - Mozilla Firefox 3.6.28 nonfunctional
-    - Apple Safari 5.1.5 (Lion) perfect
-    - Microsoft Internet Explorer 9 perfect
-    - Microsoft Internet Explorer 8 good
-    - Microsoft Internet Explorer 7 minor problems
-    - Microsoft Internet Explorer 6 not tested
-    - KDE Konqueror 4.7.4 nonfunctional
-    - KDE Konqueror 4.5.5 nonfunctional
-    - Opera (all versions) not tested
+  - Google Chrome 18 perfect
+  - Google Chrome 17 perfect
+  - Mozilla Firefox 11.0 perfect
+  - Mozilla Firefox 10.1 perfect
+  - Mozilla Firefox 10.0.2 perfect
+  - Mozilla Firefox 3.6.28 nonfunctional
+  - Apple Safari 5.1.5 (Lion) perfect
+  - Microsoft Internet Explorer 9 perfect
+  - Microsoft Internet Explorer 8 good
+  - Microsoft Internet Explorer 7 minor problems
+  - Microsoft Internet Explorer 6 not tested
+  - KDE Konqueror 4.7.4 nonfunctional
+  - KDE Konqueror 4.5.5 nonfunctional
+  - Opera (all versions) not tested
 
-    NOTE: Internet Explorer 6 is no longer supported by JBrowse.
+  NOTE: Internet Explorer 6 is no longer supported by JBrowse.
 
 - Added an automated-setup script, setup.sh, that tries to install Perl
   prerequisites, format Volvox example data, and install Wiggle and BAM support
@@ -3608,9 +3608,9 @@ Special Release for Apollo
 - NON-BACKWARDS-COMPATIBLE improvements to the JSON format used for track
   configuration, feature data, and image data
 
-    - initial support for a new hook system for greater
-      administrator-configurability of feature display
-    - support for more than one level of subfeatures
+  - initial support for a new hook system for greater
+    administrator-configurability of feature display
+  - support for more than one level of subfeatures
 
 - Miscellaneous improvements and refactoring of data-formatting Perl code.
 
@@ -3676,7 +3676,7 @@ Known issues/limitations with this release:
 
 - Some additional CPAN modules are now required:
 
-    PerlIO::gzip Heap::Simple Devel::Size
+  PerlIO::gzip Heap::Simple Devel::Size
 
 - No JSON-level backward compatibility. If you are upgrading from an older
   version of JBrowse, you will have to regenerate all the JSON files on your

@@ -2,7 +2,7 @@
 layout: post
 title: JBrowse 1.15.0 release - CRAM support, CSI indexes, and on the desktop!
 date: 2018-07-19
-tags: ["Development", "News", "Software releases"]
+tags: ['Development', 'News', 'Software releases']
 ---
 
 JBrowse 1.15.0 has been released! This is a really big one.
