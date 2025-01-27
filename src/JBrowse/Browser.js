@@ -2,7 +2,6 @@ import dompurify from 'dompurify'
 
 const url = cjsRequire('url')
 
-
 import packagejson from './package.json'
 define([
   'dojo/_base/declare',
@@ -499,8 +498,10 @@ define([
           var errors_div = dojo.byId('fatal_error_list')
           dojo.create(
             'div',
-            { 
-              className: 'error', innerHTML: formatError(error) },
+            {
+              className: 'error',
+              innerHTML: formatError(error),
+            },
             errors_div,
           )
         }
@@ -3048,7 +3049,10 @@ define([
 
           new InfoDialog({
             title: 'Not found',
-            content: 'Not found: <span class="locString">' + dompurify.sanitize(loc) + '</span>',
+            content:
+              'Not found: <span class="locString">' +
+              dompurify.sanitize(loc) +
+              '</span>',
             className: 'notfound-dialog',
           }).show()
           if (!thisB.view.pxPerBp) {
