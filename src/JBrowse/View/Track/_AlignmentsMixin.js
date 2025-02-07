@@ -79,17 +79,9 @@ define([
           .toLowerCase()}`,
         innerHTML: '',
       })
-      var fmt = dojo.hitch(this, function (name, value, feature, unsafe) {
+      var fmt = dojo.hitch(this, function (name, value, feature) {
         name = Util.ucFirst(name.replace(/_/g, ' '))
-        return this.renderDetailField(
-          container,
-          name,
-          value,
-          feature,
-          null,
-          {},
-          unsafe,
-        )
+        return this.renderDetailField(container, name, value, feature, null, {})
       })
 
       this._renderCoreDetails(track, f, div, container)
